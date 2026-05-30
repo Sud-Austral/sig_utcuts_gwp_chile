@@ -27,16 +27,17 @@ Esta plataforma integra información geográfica, financiera y ambiental para ap
 Para ingresar al sistema:
 1. Abra su navegador web e ingrese a la dirección: `http://localhost:5173` (o la URL de producción configurada).
 2. Se le redirigirá a la pantalla de acceso.
-3. Ingrese sus credenciales. La plataforma cuenta con tres perfiles demo preconfigurados para pruebas:
+3. Puede ingresar sus credenciales manualmente o hacer clic en cualquiera de los **botones de carga rápida para usuarios demo** (`Admin`, `Editor`, `Visor`) ubicados en la parte inferior de la tarjeta de inicio de sesión. Esto rellenará de inmediato los campos de Usuario y Contraseña con las credenciales correspondientes:
 
-| Usuario | Contraseña | Rol / Nivel de Permiso | Descripción |
-| :--- | :--- | :--- | :--- |
-| **`admin`** | `admin123` | **Administrador** | Acceso total a todos los módulos y a la consola de administración e ingesta de datos. |
-| **`editor`** | `editor123` | **Editor** | Permisos de lectura, edición y creación de proyectos e inversiones. |
-| **`viewer`** | `viewer123` | **Visor Público** | Acceso de solo lectura para consulta de mapas, dashboard, mecanismos y reportes. |
+| Botón Demo | Usuario | Contraseña | Rol / Nivel de Permiso | Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Admin** | **`admin`** | `admin123` | **Administrador** | Acceso total a todos los módulos y a la consola de administración e ingesta de datos. |
+| **Editor** | **`editor`** | `editor123` | **Editor** | Permisos de lectura, edición y creación de proyectos e inversiones. |
+| **Visor** | **`viewer`** | `viewer123` | **Visor Público** | Acceso de solo lectura para consulta de mapas, dashboard, mecanismos y reportes. |
 
 > [!NOTE]
 > El sistema de autenticación utiliza tokens JWT (JSON Web Tokens) que expiran automáticamente por seguridad.
+
 
 ---
 
@@ -78,37 +79,76 @@ Es la pantalla de bienvenida. Ofrece una vista panorámica nacional consolidada 
 
 ## 4. Módulo 2: Visor Cartográfico (Mapa Interactivo)
 
-El visualizador cartográfico está desarrollado sobre **MapLibre GL JS**, ofreciendo un rendimiento óptimo de carga geométrica.
+El visualizador cartográfico está desarrollado sobre **MapLibre GL JS**, ofreciendo un rendimiento óptimo de carga y renderizado geométrico con aceleración de hardware WebGL.
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│ [ Capas ]          MAPA INTERACTIVO (MAPLIBRE GL)      │
-│  [x] Regiones      (Límites y coropletas de comunas)   │
-│  [x] Comunas       ┌────────────────────────┐          │
-│                    │ Ficha Territorial      │          │
-│ [ Leyenda ]        │ Comuna: Aysén          │          │
-│ Muy Alta  [■]      │ Prioridad: Muy Alta    │          │
-│ Alta      [■]      │ Superficie: 50.000 ha  │          │
-│ Media     [■]      └────────────────────────┘          │
+│ [ Mapa Base ]   [ Capas ] (Drag & Drop) [ Leyenda ]    │
+│  [ Calle ]       [⋮⋮] Suelos WMS         Comunas       │
+│  [ Satélite ]    [⋮⋮] Comunas            Muy Alta  [■] │
+│                  [⋮⋮] Viveros SAG        Alta      [■] │
+│  [ Filtros ]     ───────────────────────               │
+│  Región [ CL-07 ]   MAPA INTERACTIVO (MAPLIBRE GL)     │
+│  Provincia [* ]  ┌────────────────────────┐            │
+│  Comuna    [* ]  │ Ficha Contextual       │            │
+│                  │ Tipo: Vivero SAG       │            │
+│                  │ Código: V/04-286       │            │
+│                  └────────────────────────┘            │
 └────────────────────────────────────────────────────────┘
 ```
 
-### Funciones y Operaciones:
-*   **Navegación:** Puede arrastrar el mapa para desplazarse, y usar la rueda del mouse o los controles del extremo superior derecho para hacer zoom.
-*   **Panel de Capas (Izquierda):** Permite encender o apagar las capas vectoriales:
-    *   **Regiones:** Delinea los límites oficiales de las 16 regiones de Chile.
-    *   **Comunas (Prioridad):** Colorea cada comuna con base en su prioridad territorial calculada por el algoritmo dinámico de la plataforma.
-*   **Leyenda de Priorización:**
+### Funciones y Operaciones Principales:
+
+*   **Navegación:** Arrastre el mapa para desplazarse. Use la rueda del mouse o los botones `+` / `−` en la esquina superior derecha para acercar y alejar la vista.
+*   **Selector de Mapa Base (Panel Lateral):** Permite alternar instantáneamente la cartografía base sin recargar los datos vectoriales sobrepuestos:
+    *   **Mapa de Calles (OpenStreetMap):** Cartografía estándar con rutas, fronteras terrestres y topografía de calles.
+    *   **Vista Satelital (Esri World Imagery):** Imágenes satelitales de alta resolución a nivel mundial para auditar la cobertura boscosa real en terreno.
+*   **Filtros Geográficos de Escena:** Menús desplegables para filtrar el mapa por **Región** (ej. Región del Maule `CL-07`), **Provincia** o **Comuna**, recortando automáticamente la visualización de los viveros, plantaciones y programas al área seleccionada.
+*   **Reordenamiento de Capas por Drag & Drop:**
+    *   Cada capa en la barra lateral posee un controlador de arrastre (`⋮⋮`) en el extremo izquierdo.
+    *   Mantenga presionado y arrastre una capa hacia arriba o hacia abajo en la lista para reordenarla.
+    *   *Efecto dinámico:* El mapa reordenará de inmediato el apilamiento de renderizado. Esto permite, por ejemplo, arrastrar los límites de comunas o provincias hacia arriba para pintar sus contornos verdes por encima de los rellenos densos de las capas de suelos o áreas protegidas, evitando que estas últimas tapen las divisiones territoriales.
+*   **Acordeón de Descripciones de Capa (Metadatos):**
+    *   Haga clic en el icono de información (`ℹ️`) a la derecha de cualquier capa.
+    *   Se desplegará una tarjeta técnica que describe el **Origen de los datos** (CONAF, CIREN, MMA, IDE Chile), el **Año de vigencia/actualización**, la **Categoría** y una **Descripción funcional** que explica detalladamente el propósito ecológico o institucional de la capa.
+*   **Leyenda Interactiva de Prioridad Comunal:**
     *   🟩 **Muy Alta** (Puntaje > 80)
     *   🟢 **Alta** (Puntaje 60 - 80)
     *   🟨 **Media** (Puntaje 40 - 60)
     *   🟧 **Baja** (Puntaje 20 - 40)
     *   🟥 **Muy Baja** (Puntaje < 20)
-*   **Ficha Territorial Contextual:** Al hacer clic sobre cualquier comuna pintada, se desplegará en el costado derecho una tarjeta detallada con la información base del territorio:
-    *   Nombre de la comuna y código nacional (CUD).
-    *   Superficie total en hectáreas.
-    *   Puntaje numérico exacto de prioridad (0.0 a 100.0).
-    *   Clasificación de prioridad cualitativa.
+*   **Leyenda y Filtro de Conservación de Suelos (SIRSD):**
+    *   Muestra las categorías de conservación de la capa de suelos (Muy Altas, Altas, Moderadas, Ligeras medidas de conservación, etc.) asignándoles colores específicos.
+    *   **Filtro por Clic:** Al hacer clic sobre cualquier categoría de la leyenda de suelos, el geovisor filtrará y mostrará únicamente los polígonos correspondientes en el mapa, atenuando el resto. Presione "Limpiar Filtro" para volver a la vista unificada.
+
+---
+
+### Catálogo de las 12 Capas Espaciales Disponibles:
+
+1.  **Regiones (IDE Chile):** Delinea los límites oficiales de las 16 regiones del país.
+2.  **Provincias (IDE Chile):** Límites provinciales oficiales cargados de forma diferida (lazy-loading).
+3.  **Comunas (Prioridad):** Mapa coroplético coloreado en base al escenario de priorización activa calculado dinámicamente.
+4.  **Áreas Protegidas (SIMBIO / MMA):** Catálogo de parques nacionales, reservas y santuarios naturales de la biodiversidad en Chile.
+5.  **Sitios Prioritarios (MMA):** Sectores terrestres y marinos priorizados para la conservación ecológica.
+6.  **Espacios ECMPO (Subpesca):** Límites espaciales de los Espacios Costeros Marinos de Pueblos Originarios.
+7.  **Ecosistemas Terrestres (MMA):** Clasificación ecológica de las formaciones vegetacionales del país.
+8.  **Viveros Forestales CONAF (Censo 2025):** Puntos vectoriales con los viveros forestales oficiales del país.
+9.  **Viveros SAG (CIREN 2024):** Capa vectorial unificada con los viveros registrados y autorizados por el Servicio Agrícola y Ganadero.
+10. **Plantaciones Forestales (INFOR 2022):** Catastro vectorial de alta fidelidad que indexa **146,566 polígonos** de plantaciones boscosas comerciales en Chile.
+11. **Programas SIRSD (CIREN - Vectorial):** Representación de los concursos del Sistema de Incentivos para la Recuperación de Suelos Degradados (concursos 2024).
+12. **Geoservicios WMS Activos:** Integración directa con servidores oficiales CIREN y CONAF para consultar capas ráster en vivo (Suelos Agrológicos, Incendios Forestales, Catastro Frutícola, etc.).
+
+---
+
+### Fichas Territoriales Contextuales Desacopladas:
+
+Al hacer clic en cualquier objeto del mapa (ya sea una comuna, una intervención, un vivero o un polígono de suelo), se abre una barra de detalles a la derecha adaptada al tipo de entidad:
+*   **Ficha Comuna:** Muestra nombre, código CUD, superficie (ha), prioridad cualitativa y el desglose numérico detallado de su puntaje por criterio.
+*   **Ficha Vivero CONAF:** Muestra la especie cultivada principal (común y científica), stock en cantidad de plantas, propietario/encargado, tipo de contenedor, tecnología de riego y dirección de contacto.
+*   **Ficha Vivero SAG:** Detalla el código oficial SAG, superficie autorizada en ha, lista de especies secundarias propagadas y oficina regional del SAG.
+*   **Ficha Suelos (Aptitud/SIRSD):** Detalla los factores limitantes del terreno como déficit de fósforo, acidez/pH, erosión física, fragilidad ambiental y recomendaciones de conservación.
+*   **Ficha Intervención Física:** Muestra el nombre de la iniciativa vinculada, acción (restauración/forestación), meta NDC, y balance de hectáreas estimadas vs. verificadas en terreno.
+
 
 ---
 
@@ -202,21 +242,39 @@ Este panel actúa como un auditor automático del inventario de datos, aplicando
 
 ---
 
-## 10. Módulo 8: Generación de Reportes
+## 10. Módulo 8: Generación de Reportes (Simulador de Lector PDF A4)
 
-Permite exportar y consultar compilados ejecutivos en tiempo real.
+El módulo de reportes cuenta con una interfaz avanzada que simula un lector y previsualizador digital de archivos PDF oficiales, organizando los datos agregados en hojas virtuales con formato formal A4 y membrete institucional.
 
-### Reportes Disponibles:
-1.  **Reporte Nacional:** Resumen analítico consolidado de inversiones, total de proyectos activos y metas de mitigación estimadas a nivel nacional.
-2.  **Reporte MRV:** Estado actual del proceso de verificación, detallando las brechas entre la planificación física y los avances validados en terreno por cada indicador.
-3.  **Reporte de Brechas:** Lista oficial de flags de calidad de datos activos por entidad y severidad para coordinar labores de limpieza de información.
+### Herramientas del Lector (Barra Superior):
+*   **Selector de Reporte:** Botones de alternancia para cambiar instantáneamente entre el **Reporte Nacional**, **Reporte MRV** o **Reporte de Brechas**.
+*   **Control de Escala (Zoom):** Botones para ajustar el tamaño de lectura de la página en tres escalas: `75%`, `100%` y `120%`.
+*   **Alternador de Fondo de Lectura (Modo Noche):** 
+    *   *Fondo Claro (Default):* Simula el papel blanco de impresión clásica (off-white).
+    *   *Fondo Oscuro:* Adapta el fondo de la hoja A4 al tema oscuro del geovisor para reducir la fatiga visual en lecturas prolongadas.
+*   **Acciones de Exportación:** 
+    *   *Guardar PDF:* Simula la compilación final y descarga del archivo.
+    *   *Imprimir:* Abre el diálogo nativo del sistema operativo configurado con los estilos CSS de impresión para emular la salida A4 física limpia.
 
-### Cómo Generar un Reporte:
-1.  Haga clic sobre la tarjeta del reporte que desea generar.
-2.  El sistema consultará los datos dinámicos mediante la API.
-3.  En la sección inferior se previsualizará la estructura jerárquica de datos en formato interactivo lista para su validación o exportación externa.
+### Contenidos y Estructura por Reporte:
+
+1.  **Reporte Nacional de Inversiones:**
+    *   **KPIs de Financiamiento:** Monto acumulado (USD), recuento de proyectos activos y mecanismos.
+    *   **Avance Físico de Metas (Hectáreas):** Barra de progreso que calcula y expone el avance real de superficie restaurada/forestada (Hectáreas Verificadas vs. Hectáreas Estimadas).
+    *   **Transparencia Metodológica (Fórmula Activa):** Expone textualmente la base matemática ponderada del escenario de priorización activa recalculado en el geovisor, permitiendo auditorías de planificación transparentes:
+        $$\text{Índice} = w_1 \cdot x_1 + w_2 \cdot x_2 + \dots + w_8 \cdot x_8$$
+    *   **Tabla de Indicadores de Impacto:** Detalle de emisiones evitadas (tCO₂e) y empleos generados.
+
+2.  **Reporte de Verificación MRV:**
+    *   Muestra el consolidado de muestras auditadas en campo y el porcentaje exacto de certificación física de metas silvícolas.
+    *   **Cronología de Auditoría:** Línea de tiempo que documenta las fechas de fiscalización técnica en terreno para cada proyecto.
+
+3.  **Reporte de Brechas de Calidad:**
+    *   Un listado unificado con todos los registros que levantaron alertas automáticas del motor de validación.
+    *   **Filtro Rápido en Tiempo Real:** Barra de búsqueda y selectores de gravedad integrados directamente sobre el lienzo del PDF para filtrar inconsistencias en vivo (ej. filtrar solo brechas "Críticas").
 
 ---
+
 
 ## 11. Módulo 9: Consola de Administración e Ingesta de Datos
 

@@ -5,13 +5,14 @@ Esta guía proporciona una descripción detallada y visual de todas las seccione
 ---
 
 ## Acceso e Inicio de Sesión
-Para acceder a la consola administrativa, el usuario debe autenticarse utilizando las credenciales oficiales del sistema.
-- **Usuario:** `admin`
-- **Contraseña:** `admin123`
+Para acceder a la plataforma, el usuario puede ingresar sus credenciales manualmente o hacer uso de los **botones de carga rápida para usuarios demo** (`Admin`, `Editor`, `Visor`) ubicados en la parte inferior. Al hacer clic en cualquiera de ellos, se autocompletarán los campos de Usuario y Contraseña para ingresar de inmediato.
+* **Administrador:** usuario `admin` / contraseña `admin123`
+* **Editor:** usuario `editor` / contraseña `editor123`
+* **Visor:** usuario `viewer` / contraseña `viewer123`
 
 ![Pantalla de Inicio de Sesión](images/01_login.png)
 
-*Figura 1: Formulario de inicio de sesión de la plataforma.*
+*Figura 1: Formulario de inicio de sesión de la plataforma con carga de usuarios demo.*
 
 ---
 
@@ -42,10 +43,12 @@ El Geovisor es la herramienta SIG principal para explorar capas geográficas, pr
 *Figura 3: Geovisor territorial en su vista general y con filtro aplicado.*
 
 ### Características Principales:
-* **Mapa Base Interactivo:** Control para alternar entre cartografía base estándar (OpenStreetMap) e imágenes satelitales.
-* **Gestión Dinámica de Capas:** Árbol de capas geográficas (Comunas, Provincias, Regiones, Áreas Protegidas, Ecosistemas Terrestres, Sitios Prioritarios de Conservación, Espacios ECMPO, SIRSD, Viveros Forestales, etc.). Permite arrastrar y reordenar la visualización de las capas en el mapa.
-* **Filtros Contextuales:** Menús desplegables para filtrar el mapa por Región, Provincia o Comuna.
-* **Paneles de Información:** Fichas de detalle que se despliegan lateralmente al seleccionar comunas o proyectos, mostrando el desglose de intervenciones y presupuesto.
+* **Mapa Base Interactivo:** Control visual (píldoras) en el panel lateral para alternar en tiempo real entre cartografía base clásica de calles (OpenStreetMap) e imágenes de satélite de alta resolución (Esri World Imagery).
+* **Gestión Dinámica de Capas con Drag & Drop:** Control de listado que permite al usuario reorganizar la precedencia de dibujo arrastrando y soltando las capas (`⋮⋮`). Las capas en la parte superior se renderizarán físicamente por encima de las inferiores.
+* **Acordeón Informativo de Capa:** Al presionar el botón `ℹ️`, se despliega una descripción con el año de actualización, origen oficial de los datos y su descripción técnica para cada una de las 12 capas.
+* **Filtros Contextuales:** Filtro jerárquico por Región (ej: Región Metropolitana `CL-13`), Provincia y Comuna que aplica máscaras espaciales de forma inmediata.
+* **Ficha Detallada Adaptativa:** Panel contextual derecho que se abre automáticamente al hacer clic en un objeto y expone propiedades específicas en base a su naturaleza (viveros SAG/CONAF, suelo degradado, prioridad de comuna o proyecto físico).
+* **Leyendas y Filtros Interactivos:** Panel explicativo de los rangos de prioridad y de categorías de conservación de suelos. Al seleccionar una categoría de suelos en la leyenda, se filtra espacialmente en el mapa.
 
 ---
 
@@ -132,8 +135,8 @@ Herramienta de auditoría automática que identifica inconsistencias y datos fal
 
 ---
 
-## 8. Centro de Reportes Oficiales
-Interfaz interactiva que simula un lector y generador de archivos PDF oficiales para impresión o descarga.
+## 8. Centro de Reportes Oficiales (Simulador PDF)
+Interfaz interactiva avanzada que simula la lectura, auditoría y previsualización de hojas físicas A4 con membrete oficial del Gobierno de Chile y pie de página numerado formal.
 
 ````carousel
 ![Lector PDF: Reporte Nacional](images/09_reportes_nacional.png)
@@ -145,11 +148,11 @@ Interfaz interactiva que simula un lector y generador de archivos PDF oficiales 
 
 *Figura 9: Visualizador de reportes interactivo con simulación de PDF.*
 
-### Controles de Visualización:
-* **Lector de PDF Integrado:** Simulación de una hoja A4 con membrete oficial del Ministerio del Medio Ambiente.
-* **Herramientas del Visor:** Ajuste de zoom (75%, 100%, 120%), modo de color del documento (claro/oscuro) y controles de paginación.
-* **Descarga e Impresión:** Botones para simular la descarga compilada o abrir el diálogo nativo de impresión.
-* **Filtros de Auditoría del PDF:** Selector dinámico exclusivo para filtrar datos directamente sobre la vista simulada.
+### Controles de Visualización y Acción:
+* **Barra de Lector PDF:** Controles superiores para cambiar de reporte, ajustar el nivel de escala del documento (`75%`, `100%`, `120%`) e imprimir.
+* **Alternador de Fondo de Papel:** Permite cambiar la visualización de la hoja entre fondo claro off-white (simulando la impresión real) y fondo oscuro integrado con el tema de la aplicación.
+* **Transparencia Metodológica:** El Reporte Nacional muestra la ecuación e indexación matemática activa del escenario de priorización calculado, transparentando las ponderaciones de las variables territoriales.
+* **Filtros en el PDF:** El Reporte de Brechas permite buscar y filtrar las alertas críticas directamente en la vista del documento mediante controles integrados.
 
 ---
 
