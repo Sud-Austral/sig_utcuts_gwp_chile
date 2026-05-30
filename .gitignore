@@ -131,3 +131,10 @@ Thumbs.db
 # IDEs
 .vscode/
 .idea/
+
+# Local Documentation and non-essential inputs
+docs/
+insumos/*
+!insumos/datos_geo/
+!insumos/formularios_xlsform/
+
