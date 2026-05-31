@@ -1,8 +1,11 @@
 """SIG-UTCUTS Chile — FastAPI main application."""
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.core.config import settings
 from app.db.base import Base
@@ -92,3 +95,19 @@ app.include_router(data_quality_router.router, prefix="/api/v1/data-quality", ta
 app.include_router(reports.router, prefix="/api/v1/reports", tags=["Reportes"])
 app.include_router(evidence_router.router, prefix="/api/v1/evidence", tags=["Evidencia"])
 app.include_router(kobo.router, prefix="/api/v1/kobo", tags=["Kobo"])
+
+
+# ── Servir frontend compilado (solo cuando existe /app/static) ────────────────
+_STATIC = "/app/static"
+
+if os.path.isdir(_STATIC):
+    _assets = os.path.join(_STATIC, "assets")
+    if os.path.isdir(_assets):
+        app.mount("/assets", StaticFiles(directory=_assets), name="assets")
+
+    @app.get("/{full_path:path}", include_in_schema=False)
+    async def serve_spa(full_path: str):
+        requested = os.path.join(_STATIC, full_path)
+        if os.path.isfile(requested):
+            return FileResponse(requested)
+        return FileResponse(os.path.join(_STATIC, "index.html"))
