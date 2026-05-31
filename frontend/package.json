@@ -14,8 +14,6 @@
     "react-router-dom": "^6.21.0",
     "zustand": "^4.4.7",
     "maplibre-gl": "^4.0.0",
-    "recharts": "^2.10.3",
-    "@tanstack/react-table": "^8.11.0",
     "axios": "^1.6.2"
   },
   "devDependencies": {

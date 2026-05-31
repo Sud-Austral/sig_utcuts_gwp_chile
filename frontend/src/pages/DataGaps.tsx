@@ -45,7 +45,7 @@ export default function DataGaps() {
         <div className="glass-card p-5">
           <h3 className="text-sm font-semibold text-white mb-4">Brechas por Tipo</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {summary.by_type.map((t: any) => (
+            {(Array.isArray(summary.by_type) ? summary.by_type : []).map((t: any) => (
               <div key={t.type} className="bg-ocean-800/30 rounded-lg p-3 flex items-center justify-between">
                 <span className="text-sm text-ocean-300">{FLAG_LABELS[t.type] || t.type}</span>
                 <span className="text-lg font-bold text-fire-400">{t.count}</span>
