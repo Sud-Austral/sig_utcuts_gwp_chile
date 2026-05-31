@@ -59,8 +59,8 @@ export default function Dashboard() {
           <h3 className="text-sm font-semibold text-white mb-4">Inversión por Fuente</h3>
           <ResponsiveContainer width="100%" height={250}>
             <PieChart>
-              <Pie data={data.investment_by_source} dataKey="amount" nameKey="source" cx="50%" cy="50%" outerRadius={90} label={({ source }) => source}>
-                {data.investment_by_source.map((_: any, i: number) => (
+              <Pie data={data.investment_by_source ?? []} dataKey="amount" nameKey="source" cx="50%" cy="50%" outerRadius={90} label={({ source }) => source}>
+                {(data.investment_by_source ?? []).map((_: any, i: number) => (
                   <Cell key={i} fill={COLORS[i % COLORS.length]} />
                 ))}
               </Pie>
@@ -73,7 +73,7 @@ export default function Dashboard() {
         <div className="glass-card p-5">
           <h3 className="text-sm font-semibold text-white mb-4">Ranking Territorial</h3>
           <div className="space-y-3">
-            {data.top_territories.map((t: any, i: number) => (
+            {(data.top_territories ?? []).map((t: any, i: number) => (
               <div key={i} className="flex items-center justify-between bg-ocean-800/30 rounded-lg px-4 py-3">
                 <div className="flex items-center gap-3">
                   <span className="text-lg font-bold text-ocean-400 w-6">#{i + 1}</span>

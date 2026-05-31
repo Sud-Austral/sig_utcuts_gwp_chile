@@ -21,7 +21,7 @@ export default function Prioritization() {
     setLoading(true)
     try {
       const r = await api.post('/prioritization/calculate', weights)
-      setRanking(r.data.results.map((x: any) => ({ ...x, territory_name: x.name, score_total: x.score })))
+      setRanking((r.data?.results ?? []).map((x: any) => ({ ...x, territory_name: x.name, score_total: x.score })))
       setLoading(false)
     } catch { setLoading(false) }
   }
