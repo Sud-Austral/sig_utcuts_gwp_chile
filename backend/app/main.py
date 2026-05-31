@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.core.config import settings
@@ -13,7 +14,8 @@ from app.db.session import engine, SessionLocal
 # Import all models so they register with Base.metadata
 from app.models import user, territory, mechanism, project, investment  # noqa
 from app.models import intervention, mrv, prioritization, data_quality  # noqa
-from app.models import layer, evidence, audit, sirsd_programa, plantacion_forestal_2022, kobo  # noqa
+from app.models import layer, evidence, audit, sirsd_programa, plantacion_forestal_2022  # noqa
+from app.models import kobo as kobo_model  # noqa: registra KoboConfig y KoboStagingRecord
 
 # Import routers
 from app.api.v1 import (
@@ -27,12 +29,15 @@ from app.api.v1 import (
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Create tables and seed data on startup."""
-    # Enable PostGIS extension only if using PostgreSQL
+    # Enable PostGIS extension only if using PostgreSQL (non-fatal si no está disponible)
     if not settings.is_sqlite:
         from sqlalchemy import text
-        with engine.connect() as conn:
-            conn.execute(text("CREATE EXTENSION IF NOT EXISTS postgis"))
-            conn.commit()
+        try:
+            with engine.connect() as conn:
+                conn.execute(text("CREATE EXTENSION IF NOT EXISTS postgis"))
+                conn.commit()
+        except Exception as e:
+            print(f"  [WARN] PostGIS no disponible (geometrías como texto JSON): {e}")
 
     Base.metadata.create_all(bind=engine)
 
@@ -97,10 +102,17 @@ app.include_router(kobo.router, prefix="/api/v1/kobo", tags=["Kobo"])
 
 
 # ── Servir frontend compilado (solo cuando existe /app/static) ────────────────
-# StaticFiles(html=True) sirve archivos existentes y devuelve index.html para
-# rutas desconocidas, lo que habilita el enrutamiento de React Router de forma
-# segura sin riesgo de path traversal.
 _STATIC = "/app/static"
+_STATIC_REAL = os.path.realpath(_STATIC)
 
 if os.path.isdir(_STATIC):
-    app.mount("/", StaticFiles(directory=_STATIC, html=True), name="frontend")
+    _assets = os.path.join(_STATIC, "assets")
+    if os.path.isdir(_assets):
+        app.mount("/assets", StaticFiles(directory=_assets), name="assets")
+
+    @app.get("/{full_path:path}", include_in_schema=False)
+    async def serve_spa(full_path: str):
+        requested = os.path.realpath(os.path.join(_STATIC, full_path))
+        if requested.startswith(_STATIC_REAL + os.sep) and os.path.isfile(requested):
+            return FileResponse(requested)
+        return FileResponse(os.path.join(_STATIC, "index.html"))

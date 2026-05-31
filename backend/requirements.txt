@@ -25,6 +25,9 @@ pytest-asyncio==0.23.2
 # PostgreSQL driver (requerido en producción)
 psycopg2-binary==2.9.9
 
+# bcrypt pinned: passlib 1.7.4 es incompatible con bcrypt>=4.0.0
+bcrypt==3.2.2
+
 # Production server
 gunicorn==21.2.0
 
