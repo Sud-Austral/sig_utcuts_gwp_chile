@@ -13,7 +13,7 @@ export default function Prioritization() {
   useEffect(() => { loadRanking() }, [])
 
   const loadRanking = () => {
-    api.get('/prioritization/ranking').then(r => { setRanking(r.data); setLoading(false) }).catch(() => setLoading(false))
+    api.get('/prioritization/ranking').then(r => { setRanking(Array.isArray(r.data) ? r.data : []); setLoading(false) }).catch(() => setLoading(false))
   }
 
   const recalculate = async () => {

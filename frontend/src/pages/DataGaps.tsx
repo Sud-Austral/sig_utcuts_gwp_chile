@@ -19,7 +19,7 @@ export default function DataGaps() {
 
   useEffect(() => {
     Promise.all([api.get('/data-quality/summary'), api.get('/data-quality/flags?resolved=false')])
-      .then(([s, f]) => { setSummary(s.data); setFlags(f.data); setLoading(false) })
+      .then(([s, f]) => { setSummary(s.data); setFlags(Array.isArray(f.data) ? f.data : []); setLoading(false) })
       .catch(() => setLoading(false))
   }, [])
 

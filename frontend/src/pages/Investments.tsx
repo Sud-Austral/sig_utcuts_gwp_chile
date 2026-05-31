@@ -8,14 +8,14 @@ export default function Investments() {
   const [form, setForm] = useState({ project_id: 1, funding_source: '', funding_type: 'public', amount: 0, currency: 'USD', amount_usd: 0, year: 2024, data_quality: 'demo' })
 
   useEffect(() => {
-    api.get('/investments').then(r => { setInvestments(r.data); setLoading(false) }).catch(() => setLoading(false))
+    api.get('/investments').then(r => { setInvestments(Array.isArray(r.data) ? r.data : []); setLoading(false) }).catch(() => setLoading(false))
   }, [])
 
   const handleSubmit = async () => {
     try {
       await api.post('/investments', form)
       const r = await api.get('/investments')
-      setInvestments(r.data)
+      setInvestments(Array.isArray(r.data) ? r.data : [])
       setShowForm(false)
     } catch (err) { console.error(err) }
   }

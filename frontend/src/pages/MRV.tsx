@@ -13,7 +13,7 @@ export default function MRV() {
       api.get('/mrv/indicators'),
       api.get('/mrv/observations'),
     ]).then(([s, i, o]) => {
-      setSummary(s.data); setIndicators(i.data); setObservations(o.data); setLoading(false)
+      setSummary(s.data); setIndicators(Array.isArray(i.data) ? i.data : []); setObservations(Array.isArray(o.data) ? o.data : []); setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
 

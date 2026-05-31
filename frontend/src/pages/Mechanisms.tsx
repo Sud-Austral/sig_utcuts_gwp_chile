@@ -13,7 +13,7 @@ export default function Mechanisms() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    api.get('/mechanisms').then((r) => { setMechanisms(r.data); setLoading(false) }).catch(() => setLoading(false))
+    api.get('/mechanisms').then((r) => { setMechanisms(Array.isArray(r.data) ? r.data : []); setLoading(false) }).catch(() => setLoading(false))
   }, [])
 
   if (loading) return <div className="text-center text-ocean-400 py-20 animate-pulse-soft">Cargando mecanismos...</div>

@@ -541,14 +541,14 @@ export default function Reports() {
                         <div className={`p-4 border rounded-lg ${isLightDoc ? 'bg-white border-slate-200' : 'bg-slate-950/40 border-slate-800'}`}>
                           <div className="text-[9px] font-bold text-slate-400 uppercase tracking-wider mb-1">Nivel Crítico/Alto</div>
                           <div className="text-xl font-bold font-mono text-red-600">
-                            {reportData.flags.filter((f: any) => f.severity.toLowerCase() === 'critica' || f.severity.toLowerCase() === 'alta' || f.severity.toLowerCase() === 'crítica').length}
+                            {(reportData.flags ?? []).filter((f: any) => f.severity.toLowerCase() === 'critica' || f.severity.toLowerCase() === 'alta' || f.severity.toLowerCase() === 'crítica').length}
                           </div>
                           <div className="text-[8px] text-slate-400 mt-1">Requieren acción inmediata</div>
                         </div>
                         <div className={`p-4 border rounded-lg ${isLightDoc ? 'bg-white border-slate-200' : 'bg-slate-950/40 border-slate-800'}`}>
                           <div className="text-[9px] font-bold text-slate-400 uppercase tracking-wider mb-1">Nivel Medio/Bajo</div>
                           <div className="text-xl font-bold font-mono text-amber-500">
-                            {reportData.flags.filter((f: any) => f.severity.toLowerCase() === 'media' || f.severity.toLowerCase() === 'baja').length}
+                            {(reportData.flags ?? []).filter((f: any) => f.severity.toLowerCase() === 'media' || f.severity.toLowerCase() === 'baja').length}
                           </div>
                           <div className="text-[8px] text-slate-400 mt-1">Advertencias leves</div>
                         </div>
@@ -558,7 +558,7 @@ export default function Reports() {
                       <div className="space-y-2">
                         <div className="text-[10px] font-bold uppercase tracking-wider border-b pb-1">Inconsistencias y Auditorías de Calidad</div>
                         
-                        {reportData.flags.length === 0 ? (
+                        {(reportData.flags ?? []).length === 0 ? (
                           <div className="text-center py-6 border border-dashed rounded text-[10px] text-slate-400">
                             No se registran brechas de información asociadas al filtro.
                           </div>
@@ -573,7 +573,7 @@ export default function Reports() {
                               </tr>
                             </thead>
                             <tbody>
-                              {reportData.flags
+                              {(reportData.flags ?? [])
                                 .filter((f: any) => {
                                   if (filterSeverity === 'alta') {
                                     return f.severity.toLowerCase() === 'critica' || f.severity.toLowerCase() === 'alta' || f.severity.toLowerCase() === 'crítica';
