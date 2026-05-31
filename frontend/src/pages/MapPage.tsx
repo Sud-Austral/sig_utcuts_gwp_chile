@@ -181,11 +181,13 @@ function formatLabel(str: string): string {
 
 function getStandardRegion2DigitCode(dbCode: string): string {
   if (!dbCode) return "";
+  // Código ya en formato numérico de 1-2 dígitos (viene de Regional.json via codregion)
+  if (/^\d{1,2}$/.test(dbCode)) return dbCode.padStart(2, '0');
   if (dbCode === "CL-CO") return "04";
   if (dbCode === "CL-VS") return "05";
   if (dbCode === "CL-ML") return "07";
   if (dbCode === "CL-BI") return "08";
-  
+
   const match = dbCode.match(/CL-(?:R)?(\d+)/i);
   if (match) {
     const num = parseInt(match[1], 10);
@@ -291,20 +293,31 @@ export default function MapPage() {
 
   const loadGeoData = async () => {
     try {
-      // Load regions
-      const regionsRes = await api.get('/territories/geojson/all?type=region')
-      regionsGeoJSON.current = regionsRes.data
-      if (regionsRes.data && regionsRes.data.features) {
-        const list = regionsRes.data.features.map((f: any) => ({
-          code: f.properties.code,
-          name: f.properties.name
+      // Regiones: carga desde GeoJSON real (no desde la DB que tiene bounding boxes del seed)
+      const regionsFetch = await fetch('/insumos/datos_geo/Regional.json')
+      const regionsRaw = await regionsFetch.json()
+      // Normalizar: agregar 'code' (codregion con padding) y 'name' (campo Region)
+      const regionsData = {
+        ...regionsRaw,
+        features: regionsRaw.features.map((f: any) => ({
+          ...f,
+          properties: {
+            ...f.properties,
+            code: String(f.properties.codregion).padStart(2, '0'),
+            name: f.properties.Region,
+          }
         }))
-        const uniqueList = list.filter((v: any, i: any, a: any) => a.findIndex((t: any) => t.code === v.code) === i)
-        setRegionsList(uniqueList.sort((a: any, b: any) => a.name.localeCompare(b.name)))
       }
-      if (map.current && regionsRes.data.features && regionsRes.data.features.length > 0) {
+      regionsGeoJSON.current = regionsData
+      const list = regionsData.features.map((f: any) => ({
+        code: f.properties.code,
+        name: f.properties.name
+      }))
+      const uniqueList = list.filter((v: any, i: any, a: any) => a.findIndex((t: any) => t.code === v.code) === i)
+      setRegionsList(uniqueList.sort((a: any, b: any) => a.name.localeCompare(b.name)))
+      if (map.current && regionsData.features.length > 0) {
         const vis = layerToggles['regions'] ? 'visible' : 'none'
-        map.current.addSource('regions', { type: 'geojson', data: regionsRes.data })
+        map.current.addSource('regions', { type: 'geojson', data: regionsData })
         map.current.addLayer({ id: 'regions-fill', type: 'fill', source: 'regions',
           layout: { 'visibility': vis },
           paint: { 'fill-color': '#3b82f6', 'fill-opacity': 0.15 } })
@@ -312,11 +325,26 @@ export default function MapPage() {
           layout: { 'visibility': vis },
           paint: { 'line-color': '#60a5fa', 'line-width': 2 } })
       }
-      // Load communes with priority colors
-      const communesRes = await api.get('/territories/geojson/all?type=commune')
-      if (map.current && communesRes.data.features.length > 0) {
+
+      // Comunas: carga desde GeoJSON real (no desde la DB que tiene bounding boxes del seed)
+      const communesFetch = await fetch('/insumos/datos_geo/comunas.json')
+      const communesRaw = await communesFetch.json()
+      // Normalizar: agregar 'code' (cod_comuna con padding), 'name' (Comuna) y 'area_ha' (st_area_sh m² → ha)
+      const communesData = {
+        ...communesRaw,
+        features: communesRaw.features.map((f: any) => ({
+          ...f,
+          properties: {
+            ...f.properties,
+            code: String(f.properties.cod_comuna).padStart(5, '0'),
+            name: f.properties.Comuna,
+            area_ha: Math.round((f.properties.st_area_sh || 0) / 10000),
+          }
+        }))
+      }
+      if (map.current && communesData.features?.length > 0) {
         const vis = layerToggles['communes'] ? 'visible' : 'none'
-        map.current.addSource('communes', { type: 'geojson', data: communesRes.data })
+        map.current.addSource('communes', { type: 'geojson', data: communesData })
         map.current.addLayer({ id: 'communes-fill', type: 'fill', source: 'communes',
           layout: { 'visibility': vis },
           paint: {
@@ -327,8 +355,7 @@ export default function MapPage() {
         map.current.addLayer({ id: 'communes-line', type: 'line', source: 'communes',
           layout: { 'visibility': vis },
           paint: { 'line-color': '#94a3b8', 'line-width': 1 } })
-        
-        // Click handler
+
         map.current.on('click', 'communes-fill', (e) => {
           if (e.features && e.features[0]) {
             setSelectedIntervention(null)
@@ -338,6 +365,7 @@ export default function MapPage() {
         map.current.on('mouseenter', 'communes-fill', () => { if (map.current) map.current.getCanvas().style.cursor = 'pointer' })
         map.current.on('mouseleave', 'communes-fill', () => { if (map.current) map.current.getCanvas().style.cursor = '' })
       }
+
       reorderMapLayers(layersList)
     } catch (err) {
       console.error('Error loading geo data:', err)
