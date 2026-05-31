@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
 import api from '../api/client'
 
 export default function Prioritization() {
@@ -61,18 +60,27 @@ export default function Prioritization() {
         </button>
       </div>
 
-      {/* Chart */}
+      {/* Chart — barras CSS, sin Recharts */}
       <div className="glass-card p-5">
         <h3 className="text-sm font-semibold text-white mb-4">Ranking de Comunas</h3>
         {ranking.length > 0 ? (
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={ranking.slice(0, 10)} layout="vertical" margin={{ left: 100 }}>
-              <XAxis type="number" domain={[0, 100]} tick={{ fill: '#94a3b8', fontSize: 12 }} />
-              <YAxis type="category" dataKey="territory_name" tick={{ fill: '#e2e8f0', fontSize: 12 }} width={100} />
-              <Tooltip contentStyle={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8 }} />
-              <Bar dataKey="score_total" radius={[0, 4, 4, 0]} fill="#22c55e" />
-            </BarChart>
-          </ResponsiveContainer>
+          <div className="space-y-2">
+            {ranking.slice(0, 10).map((r: any, i: number) => {
+              const score = r.score_total ?? r.score ?? 0
+              const name = r.territory_name ?? r.name ?? '—'
+              const pct = Math.min(100, Math.max(0, score))
+              return (
+                <div key={i} className="flex items-center gap-3">
+                  <span className="text-xs text-ocean-400 w-4 text-right">{i + 1}</span>
+                  <span className="text-xs text-ocean-200 w-32 truncate">{name}</span>
+                  <div className="flex-1 bg-ocean-800 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-forest-500" style={{ width: `${pct}%` }} />
+                  </div>
+                  <span className="text-xs font-mono text-white w-10 text-right">{score.toFixed(1)}</span>
+                </div>
+              )
+            })}
+          </div>
         ) : (
           <div className="text-center text-ocean-400 py-10 text-sm">Sin datos de priorización disponibles</div>
         )}
