@@ -1,6 +1,6 @@
 # Datos y documentación — no van al build
 data/
-insumos/
+/insumos/
 docs/
 
 # Secretos

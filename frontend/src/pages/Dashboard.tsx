@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react'
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import api from '../api/client'
 
 const COLORS = ['#22c55e', '#3b82f6', '#f97316', '#a855f7', '#eab308', '#ec4899']
-
-const priorityColors: Record<string, string> = {
-  muy_alta: '#16a34a', alta: '#22c55e', media: '#eab308', baja: '#f97316', muy_baja: '#ef4444'
-}
 
 export default function Dashboard() {
   const [data, setData] = useState<any>(null)
@@ -57,16 +52,26 @@ export default function Dashboard() {
         {/* Investment by Source */}
         <div className="glass-card p-5">
           <h3 className="text-sm font-semibold text-white mb-4">Inversión por Fuente</h3>
-          <ResponsiveContainer width="100%" height={250}>
-            <PieChart>
-              <Pie data={data.investment_by_source ?? []} dataKey="amount" nameKey="source" cx="50%" cy="50%" outerRadius={90} label={({ source }) => source}>
-                {(data.investment_by_source ?? []).map((_: any, i: number) => (
-                  <Cell key={i} fill={COLORS[i % COLORS.length]} />
-                ))}
-              </Pie>
-              <Tooltip formatter={(v: number) => `$${(v / 1e6).toFixed(1)}M`} contentStyle={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8 }} />
-            </PieChart>
-          </ResponsiveContainer>
+          <div className="space-y-3 mt-2">
+            {(data.investment_by_source ?? []).map((item: any, i: number) => {
+              const total = (data.investment_by_source ?? []).reduce((s: number, x: any) => s + (x.amount || 0), 0)
+              const pct = total > 0 ? Math.round((item.amount / total) * 100) : 0
+              return (
+                <div key={i}>
+                  <div className="flex justify-between text-xs mb-1">
+                    <span className="text-ocean-300 capitalize">{item.source}</span>
+                    <span className="text-white font-mono">${(item.amount / 1e6).toFixed(1)}M ({pct}%)</span>
+                  </div>
+                  <div className="w-full bg-ocean-800 rounded-full h-2">
+                    <div className="h-2 rounded-full" style={{ width: `${pct}%`, backgroundColor: COLORS[i % COLORS.length] }} />
+                  </div>
+                </div>
+              )
+            })}
+            {(data.investment_by_source ?? []).length === 0 && (
+              <p className="text-ocean-500 text-sm text-center py-4">Sin datos de inversión</p>
+            )}
+          </div>
         </div>
 
         {/* Top Territories */}

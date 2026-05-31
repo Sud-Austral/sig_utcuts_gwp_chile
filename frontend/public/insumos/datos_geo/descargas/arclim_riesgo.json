@@ -1,0 +1,2762 @@
+[
+  {
+    "ComCod": 1401.0,
+    "NOM_COMUNA": "POZO ALMONTE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "01401"
+  },
+  {
+    "ComCod": 1403.0,
+    "NOM_COMUNA": "COLCHANE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "01403"
+  },
+  {
+    "ComCod": 1402.0,
+    "NOM_COMUNA": "CAMIÑA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "01402"
+  },
+  {
+    "ComCod": 1404.0,
+    "NOM_COMUNA": "HUARA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "01404"
+  },
+  {
+    "ComCod": 1107.0,
+    "NOM_COMUNA": "ALTO HOSPICIO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "01107"
+  },
+  {
+    "ComCod": 1101.0,
+    "NOM_COMUNA": "IQUIQUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "01101"
+  },
+  {
+    "ComCod": 1405.0,
+    "NOM_COMUNA": "PICA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "01405"
+  },
+  {
+    "ComCod": 2104.0,
+    "NOM_COMUNA": "TALTAL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "02104"
+  },
+  {
+    "ComCod": 2101.0,
+    "NOM_COMUNA": "ANTOFAGASTA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "02101"
+  },
+  {
+    "ComCod": 2201.0,
+    "NOM_COMUNA": "CALAMA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "02201"
+  },
+  {
+    "ComCod": 2202.0,
+    "NOM_COMUNA": "OLLAGÜE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "02202"
+  },
+  {
+    "ComCod": 2203.0,
+    "NOM_COMUNA": "SAN PEDRO DE ATACAMA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "02203"
+  },
+  {
+    "ComCod": 2102.0,
+    "NOM_COMUNA": "MEJILLONES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "02102"
+  },
+  {
+    "ComCod": 2103.0,
+    "NOM_COMUNA": "SIERRA GORDA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "02103"
+  },
+  {
+    "ComCod": 2302.0,
+    "NOM_COMUNA": "MARÍA ELENA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "02302"
+  },
+  {
+    "ComCod": 2301.0,
+    "NOM_COMUNA": "TOCOPILLA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "02301"
+  },
+  {
+    "ComCod": 3101.0,
+    "NOM_COMUNA": "COPIAPÓ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "03101"
+  },
+  {
+    "ComCod": 3102.0,
+    "NOM_COMUNA": "CALDERA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "03102"
+  },
+  {
+    "ComCod": 3103.0,
+    "NOM_COMUNA": "TIERRA AMARILLA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "03103"
+  },
+  {
+    "ComCod": 3201.0,
+    "NOM_COMUNA": "CHAÑARAL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "03201"
+  },
+  {
+    "ComCod": 3202.0,
+    "NOM_COMUNA": "DIEGO DE ALMAGRO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "03202"
+  },
+  {
+    "ComCod": 3301.0,
+    "NOM_COMUNA": "VALLENAR",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "03301"
+  },
+  {
+    "ComCod": 3302.0,
+    "NOM_COMUNA": "ALTO DEL CARMEN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "03302"
+  },
+  {
+    "ComCod": 3303.0,
+    "NOM_COMUNA": "FREIRINA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "03303"
+  },
+  {
+    "ComCod": 3304.0,
+    "NOM_COMUNA": "HUASCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "03304"
+  },
+  {
+    "ComCod": 4101.0,
+    "NOM_COMUNA": "LA SERENA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04101"
+  },
+  {
+    "ComCod": 4102.0,
+    "NOM_COMUNA": "COQUIMBO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04102"
+  },
+  {
+    "ComCod": 4103.0,
+    "NOM_COMUNA": "ANDACOLLO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04103"
+  },
+  {
+    "ComCod": 4104.0,
+    "NOM_COMUNA": "LA HIGUERA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04104"
+  },
+  {
+    "ComCod": 4105.0,
+    "NOM_COMUNA": "PAIGUANO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04105"
+  },
+  {
+    "ComCod": 4106.0,
+    "NOM_COMUNA": "VICUÑA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04106"
+  },
+  {
+    "ComCod": 4201.0,
+    "NOM_COMUNA": "ILLAPEL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04201"
+  },
+  {
+    "ComCod": 4202.0,
+    "NOM_COMUNA": "CANELA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04202"
+  },
+  {
+    "ComCod": 4203.0,
+    "NOM_COMUNA": "LOS VILOS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04203"
+  },
+  {
+    "ComCod": 4204.0,
+    "NOM_COMUNA": "SALAMANCA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04204"
+  },
+  {
+    "ComCod": 4301.0,
+    "NOM_COMUNA": "OVALLE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04301"
+  },
+  {
+    "ComCod": 4302.0,
+    "NOM_COMUNA": "COMBARBALÁ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04302"
+  },
+  {
+    "ComCod": 4303.0,
+    "NOM_COMUNA": "MONTE PATRIA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04303"
+  },
+  {
+    "ComCod": 4304.0,
+    "NOM_COMUNA": "PUNITAQUI",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04304"
+  },
+  {
+    "ComCod": 4305.0,
+    "NOM_COMUNA": "RÍO HURTADO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "04305"
+  },
+  {
+    "ComCod": 5101.0,
+    "NOM_COMUNA": "VALPARAÍSO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05101"
+  },
+  {
+    "ComCod": 5102.0,
+    "NOM_COMUNA": "CASABLANCA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05102"
+  },
+  {
+    "ComCod": 5103.0,
+    "NOM_COMUNA": "CONCÓN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05103"
+  },
+  {
+    "ComCod": 5104.0,
+    "NOM_COMUNA": "JUAN FERNÁNDEZ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05104"
+  },
+  {
+    "ComCod": 5105.0,
+    "NOM_COMUNA": "PUCHUNCAVÍ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05105"
+  },
+  {
+    "ComCod": 5107.0,
+    "NOM_COMUNA": "QUINTERO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05107"
+  },
+  {
+    "ComCod": 5109.0,
+    "NOM_COMUNA": "VIÑA DEL MAR",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05109"
+  },
+  {
+    "ComCod": 5201.0,
+    "NOM_COMUNA": "ISLA DE PASCUA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05201"
+  },
+  {
+    "ComCod": 5301.0,
+    "NOM_COMUNA": "LOS ANDES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05301"
+  },
+  {
+    "ComCod": 5302.0,
+    "NOM_COMUNA": "CALLE LARGA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05302"
+  },
+  {
+    "ComCod": 5303.0,
+    "NOM_COMUNA": "RINCONADA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05303"
+  },
+  {
+    "ComCod": 5304.0,
+    "NOM_COMUNA": "SAN ESTEBAN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05304"
+  },
+  {
+    "ComCod": 5401.0,
+    "NOM_COMUNA": "LA LIGUA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05401"
+  },
+  {
+    "ComCod": 5402.0,
+    "NOM_COMUNA": "CABILDO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05402"
+  },
+  {
+    "ComCod": 5403.0,
+    "NOM_COMUNA": "PAPUDO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05403"
+  },
+  {
+    "ComCod": 5404.0,
+    "NOM_COMUNA": "PETORCA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05404"
+  },
+  {
+    "ComCod": 5405.0,
+    "NOM_COMUNA": "ZAPALLAR",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05405"
+  },
+  {
+    "ComCod": 5501.0,
+    "NOM_COMUNA": "QUILLOTA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05501"
+  },
+  {
+    "ComCod": 5502.0,
+    "NOM_COMUNA": "CALERA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05502"
+  },
+  {
+    "ComCod": 5503.0,
+    "NOM_COMUNA": "HIJUELAS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05503"
+  },
+  {
+    "ComCod": 5504.0,
+    "NOM_COMUNA": "LA CRUZ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05504"
+  },
+  {
+    "ComCod": 5506.0,
+    "NOM_COMUNA": "NOGALES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05506"
+  },
+  {
+    "ComCod": 5601.0,
+    "NOM_COMUNA": "SAN ANTONIO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05601"
+  },
+  {
+    "ComCod": 5602.0,
+    "NOM_COMUNA": "ALGARROBO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05602"
+  },
+  {
+    "ComCod": 5603.0,
+    "NOM_COMUNA": "CARTAGENA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05603"
+  },
+  {
+    "ComCod": 5604.0,
+    "NOM_COMUNA": "EL QUISCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05604"
+  },
+  {
+    "ComCod": 5605.0,
+    "NOM_COMUNA": "EL TABO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05605"
+  },
+  {
+    "ComCod": 5606.0,
+    "NOM_COMUNA": "SANTO DOMINGO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05606"
+  },
+  {
+    "ComCod": 5701.0,
+    "NOM_COMUNA": "SAN FELIPE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05701"
+  },
+  {
+    "ComCod": 5702.0,
+    "NOM_COMUNA": "CATEMU",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05702"
+  },
+  {
+    "ComCod": 5703.0,
+    "NOM_COMUNA": "LLAILLAY",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05703"
+  },
+  {
+    "ComCod": 5704.0,
+    "NOM_COMUNA": "PANQUEHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05704"
+  },
+  {
+    "ComCod": 5705.0,
+    "NOM_COMUNA": "PUTAENDO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05705"
+  },
+  {
+    "ComCod": 5706.0,
+    "NOM_COMUNA": "SANTA MARÍA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05706"
+  },
+  {
+    "ComCod": 5801.0,
+    "NOM_COMUNA": "QUILPUÉ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05801"
+  },
+  {
+    "ComCod": 5802.0,
+    "NOM_COMUNA": "LIMACHE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05802"
+  },
+  {
+    "ComCod": 5803.0,
+    "NOM_COMUNA": "OLMUÉ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05803"
+  },
+  {
+    "ComCod": 5804.0,
+    "NOM_COMUNA": "VILLA ALEMANA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "05804"
+  },
+  {
+    "ComCod": 6310.0,
+    "NOM_COMUNA": "SANTA CRUZ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06310"
+  },
+  {
+    "ComCod": 6306.0,
+    "NOM_COMUNA": "PALMILLA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06306"
+  },
+  {
+    "ComCod": 6302.0,
+    "NOM_COMUNA": "CHÉPICA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06302"
+  },
+  {
+    "ComCod": 6103.0,
+    "NOM_COMUNA": "COINCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06103"
+  },
+  {
+    "ComCod": 6104.0,
+    "NOM_COMUNA": "COLTAUCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06104"
+  },
+  {
+    "ComCod": 6117.0,
+    "NOM_COMUNA": "SAN VICENTE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06117"
+  },
+  {
+    "ComCod": 6105.0,
+    "NOM_COMUNA": "DOÑIHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06105"
+  },
+  {
+    "ComCod": 6111.0,
+    "NOM_COMUNA": "OLIVAR",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06111"
+  },
+  {
+    "ComCod": 6116.0,
+    "NOM_COMUNA": "REQUÍNOA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06116"
+  },
+  {
+    "ComCod": 6205.0,
+    "NOM_COMUNA": "NAVIDAD",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06205"
+  },
+  {
+    "ComCod": 6203.0,
+    "NOM_COMUNA": "LITUECHE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06203"
+  },
+  {
+    "ComCod": 6202.0,
+    "NOM_COMUNA": "LA ESTRELLA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06202"
+  },
+  {
+    "ComCod": 6115.0,
+    "NOM_COMUNA": "RENGO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06115"
+  },
+  {
+    "ComCod": 6109.0,
+    "NOM_COMUNA": "MALLOA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06109"
+  },
+  {
+    "ComCod": 6114.0,
+    "NOM_COMUNA": "QUINTA DE TILCOCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06114"
+  },
+  {
+    "ComCod": 6106.0,
+    "NOM_COMUNA": "GRANEROS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06106"
+  },
+  {
+    "ComCod": 6110.0,
+    "NOM_COMUNA": "MOSTAZAL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06110"
+  },
+  {
+    "ComCod": 6102.0,
+    "NOM_COMUNA": "CODEGUA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06102"
+  },
+  {
+    "ComCod": 6204.0,
+    "NOM_COMUNA": "MARCHIHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06204"
+  },
+  {
+    "ComCod": 6206.0,
+    "NOM_COMUNA": "PAREDONES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06206"
+  },
+  {
+    "ComCod": 6201.0,
+    "NOM_COMUNA": "PICHILEMU",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06201"
+  },
+  {
+    "ComCod": 6309.0,
+    "NOM_COMUNA": "PUMANQUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06309"
+  },
+  {
+    "ComCod": 6307.0,
+    "NOM_COMUNA": "PERALILLO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06307"
+  },
+  {
+    "ComCod": 6304.0,
+    "NOM_COMUNA": "LOLOL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06304"
+  },
+  {
+    "ComCod": 6112.0,
+    "NOM_COMUNA": "PEUMO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06112"
+  },
+  {
+    "ComCod": 6113.0,
+    "NOM_COMUNA": "PICHIDEGUA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06113"
+  },
+  {
+    "ComCod": 6107.0,
+    "NOM_COMUNA": "LAS CABRAS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06107"
+  },
+  {
+    "ComCod": 6308.0,
+    "NOM_COMUNA": "PLACILLA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06308"
+  },
+  {
+    "ComCod": 6305.0,
+    "NOM_COMUNA": "NANCAGUA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06305"
+  },
+  {
+    "ComCod": 6101.0,
+    "NOM_COMUNA": "RANCAGUA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06101"
+  },
+  {
+    "ComCod": 6108.0,
+    "NOM_COMUNA": "MACHALÍ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06108"
+  },
+  {
+    "ComCod": 6301.0,
+    "NOM_COMUNA": "SAN FERNANDO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06301"
+  },
+  {
+    "ComCod": 6303.0,
+    "NOM_COMUNA": "CHIMBARONGO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "06303"
+  },
+  {
+    "ComCod": 7201.0,
+    "NOM_COMUNA": "CAUQUENES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07201"
+  },
+  {
+    "ComCod": 7202.0,
+    "NOM_COMUNA": "CHANCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07202"
+  },
+  {
+    "ComCod": 7203.0,
+    "NOM_COMUNA": "PELLUHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07203"
+  },
+  {
+    "ComCod": 7102.0,
+    "NOM_COMUNA": "CONSTITUCIÓN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07102"
+  },
+  {
+    "ComCod": 7104.0,
+    "NOM_COMUNA": "EMPEDRADO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07104"
+  },
+  {
+    "ComCod": 7103.0,
+    "NOM_COMUNA": "CUREPTO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07103"
+  },
+  {
+    "ComCod": 7107.0,
+    "NOM_COMUNA": "PENCAHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07107"
+  },
+  {
+    "ComCod": 7302.0,
+    "NOM_COMUNA": "HUALAÑÉ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07302"
+  },
+  {
+    "ComCod": 7307.0,
+    "NOM_COMUNA": "SAGRADA FAMILIA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07307"
+  },
+  {
+    "ComCod": 7305.0,
+    "NOM_COMUNA": "RAUCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07305"
+  },
+  {
+    "ComCod": 7303.0,
+    "NOM_COMUNA": "LICANTÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07303"
+  },
+  {
+    "ComCod": 7309.0,
+    "NOM_COMUNA": "VICHUQUÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07309"
+  },
+  {
+    "ComCod": 7401.0,
+    "NOM_COMUNA": "LINARES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07401"
+  },
+  {
+    "ComCod": 7403.0,
+    "NOM_COMUNA": "LONGAVÍ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07403"
+  },
+  {
+    "ComCod": 7404.0,
+    "NOM_COMUNA": "PARRAL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07404"
+  },
+  {
+    "ComCod": 7405.0,
+    "NOM_COMUNA": "RETIRO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07405"
+  },
+  {
+    "ComCod": 7406.0,
+    "NOM_COMUNA": "SAN JAVIER",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07406"
+  },
+  {
+    "ComCod": 7308.0,
+    "NOM_COMUNA": "TENO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07308"
+  },
+  {
+    "ComCod": 7106.0,
+    "NOM_COMUNA": "PELARCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07106"
+  },
+  {
+    "ComCod": 7108.0,
+    "NOM_COMUNA": "RÍO CLARO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07108"
+  },
+  {
+    "ComCod": 7110.0,
+    "NOM_COMUNA": "SAN RAFAEL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07110"
+  },
+  {
+    "ComCod": 7101.0,
+    "NOM_COMUNA": "TALCA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07101"
+  },
+  {
+    "ComCod": 7105.0,
+    "NOM_COMUNA": "MAULE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07105"
+  },
+  {
+    "ComCod": 7407.0,
+    "NOM_COMUNA": "VILLA ALEGRE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07407"
+  },
+  {
+    "ComCod": 7408.0,
+    "NOM_COMUNA": "YERBAS BUENAS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07408"
+  },
+  {
+    "ComCod": 7301.0,
+    "NOM_COMUNA": "CURICÓ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07301"
+  },
+  {
+    "ComCod": 7402.0,
+    "NOM_COMUNA": "COLBÚN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07402"
+  },
+  {
+    "ComCod": 7306.0,
+    "NOM_COMUNA": "ROMERAL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07306"
+  },
+  {
+    "ComCod": 7109.0,
+    "NOM_COMUNA": "SAN CLEMENTE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07109"
+  },
+  {
+    "ComCod": 7304.0,
+    "NOM_COMUNA": "MOLINA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "07304"
+  },
+  {
+    "ComCod": 8308.0,
+    "NOM_COMUNA": "QUILACO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08308"
+  },
+  {
+    "ComCod": 8314.0,
+    "NOM_COMUNA": "ALTO BIOBÍO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08314"
+  },
+  {
+    "ComCod": 8312.0,
+    "NOM_COMUNA": "TUCAPEL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08312"
+  },
+  {
+    "ComCod": 8302.0,
+    "NOM_COMUNA": "ANTUCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08302"
+  },
+  {
+    "ComCod": 8202.0,
+    "NOM_COMUNA": "ARAUCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08202"
+  },
+  {
+    "ComCod": 8201.0,
+    "NOM_COMUNA": "LEBU",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08201"
+  },
+  {
+    "ComCod": 8204.0,
+    "NOM_COMUNA": "CONTULMO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08204"
+  },
+  {
+    "ComCod": 8207.0,
+    "NOM_COMUNA": "TIRÚA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08207"
+  },
+  {
+    "ComCod": 8203.0,
+    "NOM_COMUNA": "CAÑETE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08203"
+  },
+  {
+    "ComCod": 8103.0,
+    "NOM_COMUNA": "CHIGUAYANTE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08103"
+  },
+  {
+    "ComCod": 8105.0,
+    "NOM_COMUNA": "HUALQUI",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08105"
+  },
+  {
+    "ComCod": 8101.0,
+    "NOM_COMUNA": "CONCEPCIÓN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08101"
+  },
+  {
+    "ComCod": 8112.0,
+    "NOM_COMUNA": "HUALPÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08112"
+  },
+  {
+    "ComCod": 8102.0,
+    "NOM_COMUNA": "CORONEL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08102"
+  },
+  {
+    "ComCod": 8108.0,
+    "NOM_COMUNA": "SAN PEDRO DE LA PAZ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08108"
+  },
+  {
+    "ComCod": 8205.0,
+    "NOM_COMUNA": "CURANILAHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08205"
+  },
+  {
+    "ComCod": 8206.0,
+    "NOM_COMUNA": "LOS ÁLAMOS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08206"
+  },
+  {
+    "ComCod": 8304.0,
+    "NOM_COMUNA": "LAJA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08304"
+  },
+  {
+    "ComCod": 8310.0,
+    "NOM_COMUNA": "SAN ROSENDO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08310"
+  },
+  {
+    "ComCod": 8109.0,
+    "NOM_COMUNA": "SANTA JUANA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08109"
+  },
+  {
+    "ComCod": 8106.0,
+    "NOM_COMUNA": "LOTA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08106"
+  },
+  {
+    "ComCod": 8301.0,
+    "NOM_COMUNA": "LOS ÁNGELES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08301"
+  },
+  {
+    "ComCod": 8306.0,
+    "NOM_COMUNA": "NACIMIENTO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08306"
+  },
+  {
+    "ComCod": 8307.0,
+    "NOM_COMUNA": "NEGRETE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08307"
+  },
+  {
+    "ComCod": 8305.0,
+    "NOM_COMUNA": "MULCHÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08305"
+  },
+  {
+    "ComCod": 8107.0,
+    "NOM_COMUNA": "PENCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08107"
+  },
+  {
+    "ComCod": 8110.0,
+    "NOM_COMUNA": "TALCAHUANO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08110"
+  },
+  {
+    "ComCod": 8309.0,
+    "NOM_COMUNA": "QUILLECO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08309"
+  },
+  {
+    "ComCod": 8311.0,
+    "NOM_COMUNA": "SANTA BÁRBARA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08311"
+  },
+  {
+    "ComCod": 8111.0,
+    "NOM_COMUNA": "TOMÉ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08111"
+  },
+  {
+    "ComCod": 8104.0,
+    "NOM_COMUNA": "FLORIDA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08104"
+  },
+  {
+    "ComCod": 8303.0,
+    "NOM_COMUNA": "CABRERO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08303"
+  },
+  {
+    "ComCod": 8313.0,
+    "NOM_COMUNA": "YUMBEL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "08313"
+  },
+  {
+    "ComCod": 9101.0,
+    "NOM_COMUNA": "TEMUCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09101"
+  },
+  {
+    "ComCod": 9102.0,
+    "NOM_COMUNA": "CARAHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09102"
+  },
+  {
+    "ComCod": 9103.0,
+    "NOM_COMUNA": "CUNCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09103"
+  },
+  {
+    "ComCod": 9104.0,
+    "NOM_COMUNA": "CURARREHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09104"
+  },
+  {
+    "ComCod": 9105.0,
+    "NOM_COMUNA": "FREIRE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09105"
+  },
+  {
+    "ComCod": 9106.0,
+    "NOM_COMUNA": "GALVARINO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09106"
+  },
+  {
+    "ComCod": 9107.0,
+    "NOM_COMUNA": "GORBEA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09107"
+  },
+  {
+    "ComCod": 9108.0,
+    "NOM_COMUNA": "LAUTARO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09108"
+  },
+  {
+    "ComCod": 9109.0,
+    "NOM_COMUNA": "LONCOCHE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09109"
+  },
+  {
+    "ComCod": 9110.0,
+    "NOM_COMUNA": "MELIPEUCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09110"
+  },
+  {
+    "ComCod": 9111.0,
+    "NOM_COMUNA": "NUEVA IMPERIAL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09111"
+  },
+  {
+    "ComCod": 9112.0,
+    "NOM_COMUNA": "PADRE LAS CASAS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09112"
+  },
+  {
+    "ComCod": 9113.0,
+    "NOM_COMUNA": "PERQUENCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09113"
+  },
+  {
+    "ComCod": 9114.0,
+    "NOM_COMUNA": "PITRUFQUÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09114"
+  },
+  {
+    "ComCod": 9115.0,
+    "NOM_COMUNA": "PUCÓN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09115"
+  },
+  {
+    "ComCod": 9116.0,
+    "NOM_COMUNA": "SAAVEDRA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09116"
+  },
+  {
+    "ComCod": 9117.0,
+    "NOM_COMUNA": "TEODORO SCHMIDT",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09117"
+  },
+  {
+    "ComCod": 9118.0,
+    "NOM_COMUNA": "TOLTÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09118"
+  },
+  {
+    "ComCod": 9119.0,
+    "NOM_COMUNA": "VILCÚN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09119"
+  },
+  {
+    "ComCod": 9120.0,
+    "NOM_COMUNA": "VILLARRICA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09120"
+  },
+  {
+    "ComCod": 9121.0,
+    "NOM_COMUNA": "CHOLCHOL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09121"
+  },
+  {
+    "ComCod": 9201.0,
+    "NOM_COMUNA": "ANGOL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09201"
+  },
+  {
+    "ComCod": 9202.0,
+    "NOM_COMUNA": "COLLIPULLI",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09202"
+  },
+  {
+    "ComCod": 9203.0,
+    "NOM_COMUNA": "CURACAUTÍN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09203"
+  },
+  {
+    "ComCod": 9204.0,
+    "NOM_COMUNA": "ERCILLA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09204"
+  },
+  {
+    "ComCod": 9205.0,
+    "NOM_COMUNA": "LONQUIMAY",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09205"
+  },
+  {
+    "ComCod": 9206.0,
+    "NOM_COMUNA": "LOS SAUCES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09206"
+  },
+  {
+    "ComCod": 9207.0,
+    "NOM_COMUNA": "LUMACO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09207"
+  },
+  {
+    "ComCod": 9208.0,
+    "NOM_COMUNA": "PURÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09208"
+  },
+  {
+    "ComCod": 9209.0,
+    "NOM_COMUNA": "RENAICO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09209"
+  },
+  {
+    "ComCod": 9210.0,
+    "NOM_COMUNA": "TRAIGUÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09210"
+  },
+  {
+    "ComCod": 9211.0,
+    "NOM_COMUNA": "VICTORIA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "09211"
+  },
+  {
+    "ComCod": 10202.0,
+    "NOM_COMUNA": "ANCUD",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10202"
+  },
+  {
+    "ComCod": 10205.0,
+    "NOM_COMUNA": "DALCAHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10205"
+  },
+  {
+    "ComCod": 10209.0,
+    "NOM_COMUNA": "QUEMCHI",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10209"
+  },
+  {
+    "ComCod": 10201.0,
+    "NOM_COMUNA": "CASTRO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10201"
+  },
+  {
+    "ComCod": 10204.0,
+    "NOM_COMUNA": "CURACO DE VÉLEZ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10204"
+  },
+  {
+    "ComCod": 10210.0,
+    "NOM_COMUNA": "QUINCHAO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10210"
+  },
+  {
+    "ComCod": 10203.0,
+    "NOM_COMUNA": "CHONCHI",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10203"
+  },
+  {
+    "ComCod": 10206.0,
+    "NOM_COMUNA": "PUQUELDÓN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10206"
+  },
+  {
+    "ComCod": 10106.0,
+    "NOM_COMUNA": "LOS MUERMOS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10106"
+  },
+  {
+    "ComCod": 10104.0,
+    "NOM_COMUNA": "FRESIA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10104"
+  },
+  {
+    "ComCod": 10105.0,
+    "NOM_COMUNA": "FRUTILLAR",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10105"
+  },
+  {
+    "ComCod": 10107.0,
+    "NOM_COMUNA": "LLANQUIHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10107"
+  },
+  {
+    "ComCod": 10102.0,
+    "NOM_COMUNA": "CALBUCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10102"
+  },
+  {
+    "ComCod": 10108.0,
+    "NOM_COMUNA": "MAULLÍN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10108"
+  },
+  {
+    "ComCod": 10101.0,
+    "NOM_COMUNA": "PUERTO MONTT",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10101"
+  },
+  {
+    "ComCod": 10302.0,
+    "NOM_COMUNA": "PUERTO OCTAY",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10302"
+  },
+  {
+    "ComCod": 10306.0,
+    "NOM_COMUNA": "SAN JUAN DE LA COSTA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10306"
+  },
+  {
+    "ComCod": 10305.0,
+    "NOM_COMUNA": "RÍO NEGRO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10305"
+  },
+  {
+    "ComCod": 10303.0,
+    "NOM_COMUNA": "PURRANQUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10303"
+  },
+  {
+    "ComCod": 10207.0,
+    "NOM_COMUNA": "QUEILÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10207"
+  },
+  {
+    "ComCod": 10208.0,
+    "NOM_COMUNA": "QUELLÓN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10208"
+  },
+  {
+    "ComCod": 10307.0,
+    "NOM_COMUNA": "SAN PABLO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10307"
+  },
+  {
+    "ComCod": 10301.0,
+    "NOM_COMUNA": "OSORNO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10301"
+  },
+  {
+    "ComCod": 10304.0,
+    "NOM_COMUNA": "PUYEHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10304"
+  },
+  {
+    "ComCod": 10109.0,
+    "NOM_COMUNA": "PUERTO VARAS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10109"
+  },
+  {
+    "ComCod": 10103.0,
+    "NOM_COMUNA": "COCHAMÓ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10103"
+  },
+  {
+    "ComCod": 10403.0,
+    "NOM_COMUNA": "HUALAIHUÉ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10403"
+  },
+  {
+    "ComCod": 10401.0,
+    "NOM_COMUNA": "CHAITÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10401"
+  },
+  {
+    "ComCod": 10402.0,
+    "NOM_COMUNA": "FUTALEUFÚ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10402"
+  },
+  {
+    "ComCod": 10404.0,
+    "NOM_COMUNA": "PALENA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "10404"
+  },
+  {
+    "ComCod": 11202.0,
+    "NOM_COMUNA": "CISNES",
+    "paarc_aysen_incendios_riesgo": 0.0817,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11202"
+  },
+  {
+    "ComCod": 11203.0,
+    "NOM_COMUNA": "GUAITECAS",
+    "paarc_aysen_incendios_riesgo": 0.0,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11203"
+  },
+  {
+    "ComCod": 11303.0,
+    "NOM_COMUNA": "TORTEL",
+    "paarc_aysen_incendios_riesgo": 0.0,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11303"
+  },
+  {
+    "ComCod": 11201.0,
+    "NOM_COMUNA": "AYSÉN",
+    "paarc_aysen_incendios_riesgo": 0.1478,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11201"
+  },
+  {
+    "ComCod": 11302.0,
+    "NOM_COMUNA": "O'HIGGINS",
+    "paarc_aysen_incendios_riesgo": 0.0,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11302"
+  },
+  {
+    "ComCod": 11301.0,
+    "NOM_COMUNA": "COCHRANE",
+    "paarc_aysen_incendios_riesgo": 0.0064,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11301"
+  },
+  {
+    "ComCod": 11401.0,
+    "NOM_COMUNA": "CHILE CHICO",
+    "paarc_aysen_incendios_riesgo": 0.022,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11401"
+  },
+  {
+    "ComCod": 11402.0,
+    "NOM_COMUNA": "RÍO IBÁÑEZ",
+    "paarc_aysen_incendios_riesgo": 0.0598,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11402"
+  },
+  {
+    "ComCod": 11101.0,
+    "NOM_COMUNA": "COYHAIQUE",
+    "paarc_aysen_incendios_riesgo": 0.5443,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11101"
+  },
+  {
+    "ComCod": 11102.0,
+    "NOM_COMUNA": "LAGO VERDE",
+    "paarc_aysen_incendios_riesgo": 0.0741,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "11102"
+  },
+  {
+    "ComCod": 12102.0,
+    "NOM_COMUNA": "LAGUNA BLANCA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": -0.1262,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": -0.0142,
+    "ComCod_CUD": "12102"
+  },
+  {
+    "ComCod": 12103.0,
+    "NOM_COMUNA": "RÍO VERDE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": 0.0206,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": 0.0126,
+    "ComCod_CUD": "12103"
+  },
+  {
+    "ComCod": 12402.0,
+    "NOM_COMUNA": "TORRES DEL PAINE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": 0.6787,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": 0.1074,
+    "ComCod_CUD": "12402"
+  },
+  {
+    "ComCod": 12401.0,
+    "NOM_COMUNA": "NATALES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": 1.0,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": 0.4871,
+    "ComCod_CUD": "12401"
+  },
+  {
+    "ComCod": 12301.0,
+    "NOM_COMUNA": "PORVENIR",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": -0.1109,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": -0.5226,
+    "ComCod_CUD": "12301"
+  },
+  {
+    "ComCod": 12302.0,
+    "NOM_COMUNA": "PRIMAVERA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": 0.0894,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": 0.0,
+    "ComCod_CUD": "12302"
+  },
+  {
+    "ComCod": 12303.0,
+    "NOM_COMUNA": "TIMAUKEL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": 0.1781,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": 1.0,
+    "ComCod_CUD": "12303"
+  },
+  {
+    "ComCod": 12201.0,
+    "NOM_COMUNA": "CABO DE HORNOS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": -0.0682,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": -0.8631,
+    "ComCod_CUD": "12201"
+  },
+  {
+    "ComCod": 12104.0,
+    "NOM_COMUNA": "SAN GREGORIO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": 0.0898,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": 0.0086,
+    "ComCod_CUD": "12104"
+  },
+  {
+    "ComCod": 12101.0,
+    "NOM_COMUNA": "PUNTA ARENAS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": 0.0254,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": 0.3645,
+    "ComCod_CUD": "12101"
+  },
+  {
+    "ComCod": 13404.0,
+    "NOM_COMUNA": "PAINE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13404"
+  },
+  {
+    "ComCod": 13402.0,
+    "NOM_COMUNA": "BUIN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13402"
+  },
+  {
+    "ComCod": 13124.0,
+    "NOM_COMUNA": "PUDAHUEL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13124"
+  },
+  {
+    "ComCod": 13103.0,
+    "NOM_COMUNA": "CERRO NAVIA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13103"
+  },
+  {
+    "ComCod": 13301.0,
+    "NOM_COMUNA": "COLINA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13301"
+  },
+  {
+    "ComCod": 13303.0,
+    "NOM_COMUNA": "TILTIL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13303"
+  },
+  {
+    "ComCod": 13302.0,
+    "NOM_COMUNA": "LAMPA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13302"
+  },
+  {
+    "ComCod": 13107.0,
+    "NOM_COMUNA": "HUECHURABA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13107"
+  },
+  {
+    "ComCod": 13104.0,
+    "NOM_COMUNA": "CONCHALÍ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13104"
+  },
+  {
+    "ComCod": 13504.0,
+    "NOM_COMUNA": "MARÍA PINTO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13504"
+  },
+  {
+    "ComCod": 13503.0,
+    "NOM_COMUNA": "CURACAVÍ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13503"
+  },
+  {
+    "ComCod": 13112.0,
+    "NOM_COMUNA": "LA PINTANA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13112"
+  },
+  {
+    "ComCod": 13105.0,
+    "NOM_COMUNA": "EL BOSQUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13105"
+  },
+  {
+    "ComCod": 13106.0,
+    "NOM_COMUNA": "ESTACIÓN CENTRAL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13106"
+  },
+  {
+    "ComCod": 13121.0,
+    "NOM_COMUNA": "PEDRO AGUIRRE CERDA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13121"
+  },
+  {
+    "ComCod": 13127.0,
+    "NOM_COMUNA": "RECOLETA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13127"
+  },
+  {
+    "ComCod": 13108.0,
+    "NOM_COMUNA": "INDEPENDENCIA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13108"
+  },
+  {
+    "ComCod": 13603.0,
+    "NOM_COMUNA": "ISLA DE MAIPO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13603"
+  },
+  {
+    "ComCod": 13116.0,
+    "NOM_COMUNA": "LO ESPEJO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13116"
+  },
+  {
+    "ComCod": 13109.0,
+    "NOM_COMUNA": "LA CISTERNA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13109"
+  },
+  {
+    "ComCod": 13110.0,
+    "NOM_COMUNA": "LA FLORIDA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13110"
+  },
+  {
+    "ComCod": 13122.0,
+    "NOM_COMUNA": "PEÑALOLÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13122"
+  },
+  {
+    "ComCod": 13114.0,
+    "NOM_COMUNA": "LAS CONDES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13114"
+  },
+  {
+    "ComCod": 13113.0,
+    "NOM_COMUNA": "LA REINA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13113"
+  },
+  {
+    "ComCod": 13115.0,
+    "NOM_COMUNA": "LO BARNECHEA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13115"
+  },
+  {
+    "ComCod": 13132.0,
+    "NOM_COMUNA": "VITACURA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13132"
+  },
+  {
+    "ComCod": 13126.0,
+    "NOM_COMUNA": "QUINTA NORMAL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13126"
+  },
+  {
+    "ComCod": 13117.0,
+    "NOM_COMUNA": "LO PRADO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13117"
+  },
+  {
+    "ComCod": 13102.0,
+    "NOM_COMUNA": "CERRILLOS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13102"
+  },
+  {
+    "ComCod": 13119.0,
+    "NOM_COMUNA": "MAIPÚ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13119"
+  },
+  {
+    "ComCod": 13501.0,
+    "NOM_COMUNA": "MELIPILLA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13501"
+  },
+  {
+    "ComCod": 13118.0,
+    "NOM_COMUNA": "MACUL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13118"
+  },
+  {
+    "ComCod": 13120.0,
+    "NOM_COMUNA": "ÑUÑOA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13120"
+  },
+  {
+    "ComCod": 13605.0,
+    "NOM_COMUNA": "PEÑAFLOR",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13605"
+  },
+  {
+    "ComCod": 13604.0,
+    "NOM_COMUNA": "PADRE HURTADO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13604"
+  },
+  {
+    "ComCod": 13201.0,
+    "NOM_COMUNA": "PUENTE ALTO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13201"
+  },
+  {
+    "ComCod": 13125.0,
+    "NOM_COMUNA": "QUILICURA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13125"
+  },
+  {
+    "ComCod": 13128.0,
+    "NOM_COMUNA": "RENCA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13128"
+  },
+  {
+    "ComCod": 13403.0,
+    "NOM_COMUNA": "CALERA DE TANGO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13403"
+  },
+  {
+    "ComCod": 13401.0,
+    "NOM_COMUNA": "SAN BERNARDO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13401"
+  },
+  {
+    "ComCod": 13203.0,
+    "NOM_COMUNA": "SAN JOSÉ DE MAIPO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13203"
+  },
+  {
+    "ComCod": 13202.0,
+    "NOM_COMUNA": "PIRQUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13202"
+  },
+  {
+    "ComCod": 13129.0,
+    "NOM_COMUNA": "SAN JOAQUÍN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13129"
+  },
+  {
+    "ComCod": 13130.0,
+    "NOM_COMUNA": "SAN MIGUEL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13130"
+  },
+  {
+    "ComCod": 13131.0,
+    "NOM_COMUNA": "SAN RAMÓN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13131"
+  },
+  {
+    "ComCod": 13111.0,
+    "NOM_COMUNA": "LA GRANJA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13111"
+  },
+  {
+    "ComCod": 13123.0,
+    "NOM_COMUNA": "PROVIDENCIA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13123"
+  },
+  {
+    "ComCod": 13101.0,
+    "NOM_COMUNA": "SANTIAGO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13101"
+  },
+  {
+    "ComCod": 13602.0,
+    "NOM_COMUNA": "EL MONTE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13602"
+  },
+  {
+    "ComCod": 13601.0,
+    "NOM_COMUNA": "TALAGANTE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13601"
+  },
+  {
+    "ComCod": 13505.0,
+    "NOM_COMUNA": "SAN PEDRO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13505"
+  },
+  {
+    "ComCod": 13502.0,
+    "NOM_COMUNA": "ALHUÉ",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "13502"
+  },
+  {
+    "ComCod": 14101.0,
+    "NOM_COMUNA": "VALDIVIA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14101"
+  },
+  {
+    "ComCod": 14102.0,
+    "NOM_COMUNA": "CORRAL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14102"
+  },
+  {
+    "ComCod": 14103.0,
+    "NOM_COMUNA": "LANCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14103"
+  },
+  {
+    "ComCod": 14104.0,
+    "NOM_COMUNA": "LOS LAGOS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14104"
+  },
+  {
+    "ComCod": 14105.0,
+    "NOM_COMUNA": "MÁFIL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14105"
+  },
+  {
+    "ComCod": 14106.0,
+    "NOM_COMUNA": "MARIQUINA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14106"
+  },
+  {
+    "ComCod": 14107.0,
+    "NOM_COMUNA": "PAILLACO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14107"
+  },
+  {
+    "ComCod": 14108.0,
+    "NOM_COMUNA": "PANGUIPULLI",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14108"
+  },
+  {
+    "ComCod": 14201.0,
+    "NOM_COMUNA": "LA UNIÓN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14201"
+  },
+  {
+    "ComCod": 14202.0,
+    "NOM_COMUNA": "FUTRONO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14202"
+  },
+  {
+    "ComCod": 14203.0,
+    "NOM_COMUNA": "LAGO RANCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14203"
+  },
+  {
+    "ComCod": 14204.0,
+    "NOM_COMUNA": "RÍO BUENO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "14204"
+  },
+  {
+    "ComCod": 15101.0,
+    "NOM_COMUNA": "ARICA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "15101"
+  },
+  {
+    "ComCod": 15102.0,
+    "NOM_COMUNA": "CAMARONES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "15102"
+  },
+  {
+    "ComCod": 15201.0,
+    "NOM_COMUNA": "PUTRE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "15201"
+  },
+  {
+    "ComCod": 15202.0,
+    "NOM_COMUNA": "GENERAL LAGOS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "15202"
+  },
+  {
+    "ComCod": 16101.0,
+    "NOM_COMUNA": "CHILLÁN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16101"
+  },
+  {
+    "ComCod": 16102.0,
+    "NOM_COMUNA": "BULNES",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16102"
+  },
+  {
+    "ComCod": 16103.0,
+    "NOM_COMUNA": "CHILLÁN VIEJO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16103"
+  },
+  {
+    "ComCod": 16104.0,
+    "NOM_COMUNA": "EL CARMEN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16104"
+  },
+  {
+    "ComCod": 16105.0,
+    "NOM_COMUNA": "PEMUCO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16105"
+  },
+  {
+    "ComCod": 16106.0,
+    "NOM_COMUNA": "PINTO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16106"
+  },
+  {
+    "ComCod": 16107.0,
+    "NOM_COMUNA": "QUILLÓN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16107"
+  },
+  {
+    "ComCod": 16108.0,
+    "NOM_COMUNA": "SAN IGNACIO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16108"
+  },
+  {
+    "ComCod": 16109.0,
+    "NOM_COMUNA": "YUNGAY",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16109"
+  },
+  {
+    "ComCod": 16201.0,
+    "NOM_COMUNA": "QUIRIHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16201"
+  },
+  {
+    "ComCod": 16202.0,
+    "NOM_COMUNA": "COBQUECURA",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16202"
+  },
+  {
+    "ComCod": 16203.0,
+    "NOM_COMUNA": "COELEMU",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16203"
+  },
+  {
+    "ComCod": 16204.0,
+    "NOM_COMUNA": "NINHUE",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16204"
+  },
+  {
+    "ComCod": 16205.0,
+    "NOM_COMUNA": "PORTEZUELO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16205"
+  },
+  {
+    "ComCod": 16206.0,
+    "NOM_COMUNA": "RÁNQUIL",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16206"
+  },
+  {
+    "ComCod": 16207.0,
+    "NOM_COMUNA": "TREGUACO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16207"
+  },
+  {
+    "ComCod": 16301.0,
+    "NOM_COMUNA": "SAN CARLOS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16301"
+  },
+  {
+    "ComCod": 16302.0,
+    "NOM_COMUNA": "COIHUECO",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16302"
+  },
+  {
+    "ComCod": 16303.0,
+    "NOM_COMUNA": "ÑIQUÉN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16303"
+  },
+  {
+    "ComCod": 16304.0,
+    "NOM_COMUNA": "SAN FABIÁN",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16304"
+  },
+  {
+    "ComCod": 16305.0,
+    "NOM_COMUNA": "SAN NICOLÁS",
+    "paarc_aysen_incendios_riesgo": null,
+    "parcc_magallanes_biodiversidadturismo_humedales_riesgo_humedal": null,
+    "parcc_magallanes_biodiversidadturismo_nothofagus_riesgo_nothofagus": null,
+    "ComCod_CUD": "16305"
+  }
+]

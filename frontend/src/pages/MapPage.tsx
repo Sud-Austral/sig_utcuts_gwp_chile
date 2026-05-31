@@ -576,9 +576,11 @@ export default function MapPage() {
     if (checked && layerInfo.type === 'geojson' && layerInfo.file) {
       setLoadingLayers(prev => ({ ...prev, [key]: true }))
       try {
-        const res = await api.get(`/layers/geojson/${layerInfo.file}`)
+        const fetchRes = await fetch(`/insumos/datos_geo/${layerInfo.file}`)
+        if (!fetchRes.ok) throw new Error(`HTTP ${fetchRes.status}`)
+        const geoData = await fetchRes.json()
         if (map.current && !map.current.getSource(key)) {
-          map.current.addSource(key, { type: 'geojson', data: res.data })
+          map.current.addSource(key, { type: 'geojson', data: geoData })
 
           if (key === 'provincias') {
             map.current.addLayer({
