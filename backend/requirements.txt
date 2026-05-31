@@ -28,6 +28,9 @@ psycopg2-binary==2.9.9
 # Production server
 gunicorn==21.2.0
 
+# XLSForm / Kobo integration
+openpyxl==3.1.2
+
 # Optional: uncomment if se usan tipos nativos PostGIS
 # geoalchemy2==0.14.3
 # geopandas==0.14.1

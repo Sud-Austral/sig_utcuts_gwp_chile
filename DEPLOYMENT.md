@@ -278,7 +278,36 @@ Y en Railway: agregar `VITE_API_BASE_URL=https://<backend>.up.railway.app` como 
 - [ ] `railway.json` existe en la raíz del repositorio
 - [ ] `frontend/src/api/client.ts` usa `baseURL: '/api/v1'`
 - [ ] `frontend/vite.config.ts` tiene proxy `/api → http://localhost:8000`
-- [ ] `main.py` tiene el bloque de static serving al final
+- [ ] `main.py` tiene `app.mount("/", StaticFiles(html=True))` al final
+- [ ] **Todos los paquetes usados en routers y servicios están en `requirements.txt`** — verificar que ningún `import` de terceros quede fuera
 - [ ] `DATABASE_URL` configurada en el panel de Railway
 - [ ] `JWT_SECRET` configurada en el panel de Railway
 - [ ] La base de datos ya existe y tiene el schema cargado
+
+---
+
+## Lecciones aprendidas
+
+### Paquetes faltantes en `requirements.txt` crashean el startup
+
+El error más silencioso: un paquete usado en un servicio importado por un router no estaba en `requirements.txt`. Gunicorn arranca, intenta cargar el módulo de la aplicación, falla en el import y mata todos los workers.
+
+**Regla:** Después de agregar cualquier `import <paquete>` a código que se carga en startup (routers, servicios, modelos), verificar que el paquete esté en `requirements.txt` antes de hacer push.
+
+**Cómo detectarlo antes de deployar:**
+```bash
+# Desde la raíz del proyecto
+pip install pipreqs
+pipreqs backend/app --print
+# Comparar con requirements.txt
+```
+
+### `StaticFiles(html=True)` es la forma correcta de servir un SPA
+
+Un catch-all manual con `@app.get("/{full_path:path}")` + `os.path.join` expone path traversal. `StaticFiles(html=True)` de Starlette sirve archivos existentes y devuelve `index.html` para rutas desconocidas, con sanitización de paths incluida.
+
+### Los modelos SQLAlchemy deben importarse explícitamente en `main.py`
+
+`Base.metadata.create_all()` solo crea las tablas de los modelos que ya fueron importados al momento de ejecutarse. Si un modelo existe en `app/models/kobo.py` pero no se importa explícitamente, sus tablas nunca se crean.
+
+**Regla:** Cada archivo en `app/models/` debe aparecer en el bloque de imports de `main.py`.
