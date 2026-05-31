@@ -76,11 +76,25 @@ app.add_middleware(
 
 @app.get("/health")
 def health_check():
+    from app.db.session import SessionLocal
+    from app.models.user import User, Role
+    db = SessionLocal()
+    try:
+        users = db.query(User).count()
+        roles = db.query(Role).count()
+        db_ok = True
+    except Exception as e:
+        users, roles, db_ok = -1, -1, False
+        print(f"  [HEALTH] DB error: {e}")
+    finally:
+        db.close()
     return {
-        "status": "ok",
+        "status": "ok" if db_ok else "db_error",
         "service": settings.APP_NAME,
         "version": settings.APP_VERSION,
         "database": "sqlite" if settings.is_sqlite else "postgresql",
+        "db_users": users,
+        "db_roles": roles,
     }
 
 

@@ -64,14 +64,18 @@ export default function Prioritization() {
       {/* Chart */}
       <div className="glass-card p-5">
         <h3 className="text-sm font-semibold text-white mb-4">Ranking de Comunas</h3>
-        <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={ranking.slice(0, 10)} layout="vertical" margin={{ left: 100 }}>
-            <XAxis type="number" domain={[0, 100]} tick={{ fill: '#94a3b8', fontSize: 12 }} />
-            <YAxis type="category" dataKey="territory_name" tick={{ fill: '#e2e8f0', fontSize: 12 }} width={100} />
-            <Tooltip contentStyle={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8 }} />
-            <Bar dataKey="score_total" radius={[0, 4, 4, 0]} fill="#22c55e" />
-          </BarChart>
-        </ResponsiveContainer>
+        {ranking.length > 0 ? (
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={ranking.slice(0, 10)} layout="vertical" margin={{ left: 100 }}>
+              <XAxis type="number" domain={[0, 100]} tick={{ fill: '#94a3b8', fontSize: 12 }} />
+              <YAxis type="category" dataKey="territory_name" tick={{ fill: '#e2e8f0', fontSize: 12 }} width={100} />
+              <Tooltip contentStyle={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8 }} />
+              <Bar dataKey="score_total" radius={[0, 4, 4, 0]} fill="#22c55e" />
+            </BarChart>
+          </ResponsiveContainer>
+        ) : (
+          <div className="text-center text-ocean-400 py-10 text-sm">Sin datos de priorización disponibles</div>
+        )}
       </div>
 
       {/* Table */}

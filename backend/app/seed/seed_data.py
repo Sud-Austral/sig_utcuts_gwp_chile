@@ -514,34 +514,49 @@ def seed_intervention_geometries(db: Session):
 
 
 def run_all_seeds(db: Session):
-    """Execute all seed functions in order."""
-    print("  > Seeding roles...")
-    seed_roles(db)
-    print("  > Seeding users...")
-    seed_users(db)
-    print("  > Seeding data sources and layers...")
-    seed_data_sources(db)
-    print("  > Seeding territories...")
-    seed_territories(db)
-    print("  > Seeding mechanisms...")
-    seed_mechanisms(db)
-    print("  > Seeding projects and investments...")
-    seed_projects_and_investments(db)
-    print("  > Seeding interventions...")
-    seed_interventions(db)
-    print("  > Seeding intervention geometries...")
-    seed_intervention_geometries(db)
-    print("  > Seeding MRV indicators and observations...")
-    seed_mrv(db)
-    print("  > Seeding prioritization scores...")
-    seed_prioritization(db)
-    print("  > Seeding data quality flags...")
-    seed_data_quality(db)
-    print("  > Seeding WFS-imported SIRSD programs...")
-    seed_sirsd_programas(db)
-    print("  > Seeding forest plantations 2022...")
-    seed_plantaciones_forestales_2022(db)
-    print("  [OK] All seed data loaded successfully.")
+    """Execute all seed functions in order. Roles and users are critical."""
+    # Crítico: roles y usuarios siempre deben ejecutarse
+    try:
+        print("  > Seeding roles...")
+        seed_roles(db)
+        from sqlalchemy import text
+        role_count = db.execute(text("SELECT COUNT(*) FROM roles")).scalar()
+        print(f"  [OK] Roles en DB: {role_count}")
+    except Exception as e:
+        print(f"  [ERROR] seed_roles falló: {e}")
+        db.rollback()
+
+    try:
+        print("  > Seeding users...")
+        seed_users(db)
+        from sqlalchemy import text
+        user_count = db.execute(text("SELECT COUNT(*) FROM users")).scalar()
+        print(f"  [OK] Usuarios en DB: {user_count}")
+    except Exception as e:
+        print(f"  [ERROR] seed_users falló: {e}")
+        db.rollback()
+
+    # No críticos: si fallan, continúa sin bloquear el startup
+    for name, fn in [
+        ("data_sources", seed_data_sources),
+        ("territories", seed_territories),
+        ("mechanisms", seed_mechanisms),
+        ("projects_investments", seed_projects_and_investments),
+        ("interventions", seed_interventions),
+        ("intervention_geometries", seed_intervention_geometries),
+        ("mrv", seed_mrv),
+        ("prioritization", seed_prioritization),
+        ("data_quality", seed_data_quality),
+        ("sirsd_programas", seed_sirsd_programas),
+        ("plantaciones_forestales", seed_plantaciones_forestales_2022),
+    ]:
+        try:
+            fn(db)
+        except Exception as e:
+            print(f"  [WARN] seed_{name} falló (no crítico): {e}")
+            db.rollback()
+
+    print("  [OK] Seed completado.")
 
 
 def seed_sirsd_programas(db: Session):
