@@ -25,6 +25,7 @@ const MAP_LAYERS: MapLayer[] = [
   { key: 'areas_recupera_suelos', label: 'Conservación de Suelos (SIRSD - Vector)', type: 'geojson', file: 'areas_aptas_recuperacion_suelos.json', color: '#fbbf24' },
   { key: 'prog_recuperacion_suelos_degra', label: 'Programas SIRSD (CIREN - Vector)', type: 'geojson-api', apiUrl: '/layers/sirsd_programas/geojson', color: '#fb923c' },
   { key: 'plantaciones_forestales_2022', label: 'Plantaciones Forestales 2022 (INFOR - Vector)', type: 'geojson-api', apiUrl: '/layers/plantaciones_forestales_2022/geojson', color: '#059669' },
+  { key: 'interventions', label: 'Intervenciones Reales', type: 'geojson-api', apiUrl: '/interventions/geojson/all', color: '#e11d48' },
   { key: 'areas_protegidas', label: 'Áreas Protegidas', type: 'geojson', file: 'Areas_Protegidas.json', color: '#10b981' },
   { key: 'sitios_prioritarios', label: 'Sitios Prioritarios', type: 'geojson', file: 'sitios_prior_integrados.json', color: '#84cc16' },
   { key: 'ecmpo', label: 'Espacios ECMPO', type: 'geojson', file: 'ECMPO_geo.json', color: '#06b6d4' },
@@ -95,6 +96,13 @@ const LAYER_METADATA: Record<string, LayerMetadata> = {
     year: '2022',
     category: 'Recursos Forestales',
     geometry: 'Polígono (MultiPolígono)'
+  },
+  interventions: {
+    description: 'Intervenciones físicas reales del proyecto (restauración, forestación, conservación, manejo de bosque nativo, etc.) con su geometría asociada. Provienen en vivo de la tabla intervention_geometries, enriquecidas con datos de la intervención y el proyecto.',
+    origin: 'CONAF / Elaboración propia',
+    year: '2025',
+    category: 'Intervenciones UTCUTS',
+    geometry: 'Polígono / Punto (GeoJSON)'
   },
   areas_protegidas: {
     description: 'Límites del Sistema Nacional de Áreas Silvestres Protegidas del Estado (SNASPE) que incluyen Parques, Reservas y Monumentos Naturales bajo resguardo oficial.',
@@ -509,8 +517,10 @@ export default function MapPage() {
         filter = soilFilter
       } else if (layer.key === 'prog_recuperacion_suelos_degra') {
         filter = ['==', ['to-string', ['get', 'codreg']], reg2Digit]
+      /*
       } else if (layer.key === 'plantaciones_forestales_2022') {
         filter = ['==', ['to-string', ['get', 'codreg']], reg2Digit]
+      */
       } else if (layer.key === 'communes') {
         filter = communesFilter
       } else if (layer.key === 'regions') {
