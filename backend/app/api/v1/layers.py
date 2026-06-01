@@ -87,7 +87,7 @@ def get_plantaciones_forestales_2022_geojson(db: Session = Depends(get_db)):
 
 
 
-@router.get("/", response_model=list[LayerResponse])
+@router.get("", response_model=list[LayerResponse])
 def list_layers(category: str = None, db: Session = Depends(get_db)):
     q = db.query(Layer)
     if category:
@@ -101,7 +101,7 @@ def get_layer(layer_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Capa no encontrada")
     return l
 
-@router.post("/", response_model=LayerResponse)
+@router.post("", response_model=LayerResponse)
 def create_layer(data: LayerCreate, db: Session = Depends(get_db)):
     l = Layer(**data.model_dump(), is_sample=False)
     db.add(l)

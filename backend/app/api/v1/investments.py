@@ -8,7 +8,7 @@ from app.schemas.schemas import InvestmentCreate, InvestmentResponse
 
 router = APIRouter()
 
-@router.get("/", response_model=list[InvestmentResponse])
+@router.get("", response_model=list[InvestmentResponse])
 def list_investments(project_id: int = None, year: int = None, db: Session = Depends(get_db)):
     q = db.query(Investment)
     if project_id:
@@ -24,7 +24,7 @@ def get_investment(investment_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Inversión no encontrada")
     return i
 
-@router.post("/", response_model=InvestmentResponse)
+@router.post("", response_model=InvestmentResponse)
 def create_investment(data: InvestmentCreate, db: Session = Depends(get_db)):
     inv = Investment(**data.model_dump(), is_sample=False)
     db.add(inv)

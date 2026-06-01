@@ -7,7 +7,7 @@ from app.schemas.schemas import MechanismCreate, MechanismResponse
 
 router = APIRouter()
 
-@router.get("/", response_model=list[MechanismResponse])
+@router.get("", response_model=list[MechanismResponse])
 def list_mechanisms(category: str = None, status: str = None, db: Session = Depends(get_db)):
     q = db.query(Mechanism)
     if category:
@@ -23,7 +23,7 @@ def get_mechanism(mechanism_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Mecanismo no encontrado")
     return m
 
-@router.post("/", response_model=MechanismResponse)
+@router.post("", response_model=MechanismResponse)
 def create_mechanism(data: MechanismCreate, db: Session = Depends(get_db)):
     m = Mechanism(**data.model_dump())
     db.add(m)

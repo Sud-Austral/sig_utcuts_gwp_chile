@@ -10,7 +10,7 @@ from app.schemas.schemas import TerritoryResponse
 router = APIRouter()
 
 
-@router.get("/", response_model=list[TerritoryResponse])
+@router.get("", response_model=list[TerritoryResponse])
 def list_territories(type: str = None, parent_id: int = None, db: Session = Depends(get_db)):
     q = db.query(Territory)
     if type:

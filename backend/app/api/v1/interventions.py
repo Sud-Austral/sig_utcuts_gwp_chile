@@ -58,7 +58,7 @@ def get_all_interventions_geojson(db: Session = Depends(get_db)):
     return {"type": "FeatureCollection", "features": features}
 
 
-@router.get("/", response_model=list[InterventionResponse])
+@router.get("", response_model=list[InterventionResponse])
 def list_interventions(project_id: int = None, type: str = None, db: Session = Depends(get_db)):
     q = db.query(Intervention)
     if project_id:
@@ -74,7 +74,7 @@ def get_intervention(intervention_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Intervención no encontrada")
     return i
 
-@router.post("/", response_model=InterventionResponse)
+@router.post("", response_model=InterventionResponse)
 def create_intervention(data: InterventionCreate, db: Session = Depends(get_db)):
     i = Intervention(**data.model_dump(), is_sample=False)
     db.add(i)

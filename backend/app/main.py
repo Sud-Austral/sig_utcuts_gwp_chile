@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.core.config import settings
@@ -126,6 +126,11 @@ if os.path.isdir(_STATIC):
 
     @app.get("/{full_path:path}", include_in_schema=False)
     async def serve_spa(full_path: str):
+        # Las rutas de API no resueltas NUNCA deben devolver el index.html del SPA:
+        # si lo hicieran, el frontend recibiría HTML en lugar de JSON y vería listas
+        # vacías. Devolvemos un 404 JSON honesto para que el error sea visible.
+        if full_path == "api" or full_path.startswith("api/"):
+            return JSONResponse({"detail": "Not Found"}, status_code=404)
         requested = os.path.realpath(os.path.join(_STATIC, full_path))
         if requested.startswith(_STATIC_REAL + os.sep) and os.path.isfile(requested):
             return FileResponse(requested)

@@ -72,8 +72,8 @@ class MechanismResponse(BaseModel):
     time_horizon: Optional[str] = None
     ndc_alignment: Optional[str] = None
     target_beneficiaries: Optional[str] = None
-    status: str
-    is_sample: bool = False
+    status: Optional[str] = None
+    is_sample: Optional[bool] = False
     created_at: Optional[datetime] = None
     class Config:
         from_attributes = True
@@ -98,10 +98,10 @@ class ProjectResponse(BaseModel):
     description: Optional[str] = None
     start_year: Optional[int] = None
     end_year: Optional[int] = None
-    status: str
+    status: Optional[str] = None
     geographic_precision: Optional[str] = None
-    data_confidence: str
-    is_sample: bool = False
+    data_confidence: Optional[str] = None
+    is_sample: Optional[bool] = False
     created_at: Optional[datetime] = None
     class Config:
         from_attributes = True
@@ -124,11 +124,11 @@ class InvestmentResponse(BaseModel):
     funding_source: Optional[str] = None
     funding_type: Optional[str] = None
     amount: Optional[float] = None
-    currency: str
+    currency: Optional[str] = None
     amount_usd: Optional[float] = None
     year: Optional[int] = None
-    data_quality: str
-    is_sample: bool = False
+    data_quality: Optional[str] = None
+    is_sample: Optional[bool] = False
     created_at: Optional[datetime] = None
     class Config:
         from_attributes = True
@@ -151,9 +151,9 @@ class InterventionResponse(BaseModel):
     hectares_verified: Optional[float] = None
     tco2e_estimated: Optional[float] = None
     tco2e_verified: Optional[float] = None
-    status: str
-    verification_status: str
-    is_sample: bool = False
+    status: Optional[str] = None
+    verification_status: Optional[str] = None
+    is_sample: Optional[bool] = False
     class Config:
         from_attributes = True
 

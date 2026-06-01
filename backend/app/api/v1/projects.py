@@ -8,7 +8,7 @@ from app.schemas.schemas import ProjectCreate, ProjectResponse
 
 router = APIRouter()
 
-@router.get("/", response_model=list[ProjectResponse])
+@router.get("", response_model=list[ProjectResponse])
 def list_projects(status: str = None, mechanism_id: int = None, db: Session = Depends(get_db)):
     q = db.query(Project)
     if status:
@@ -24,7 +24,7 @@ def get_project(project_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Proyecto no encontrado")
     return p
 
-@router.post("/", response_model=ProjectResponse)
+@router.post("", response_model=ProjectResponse)
 def create_project(data: ProjectCreate, db: Session = Depends(get_db)):
     d = data.model_dump(exclude={"territory_ids"})
     p = Project(**d, is_sample=False)
