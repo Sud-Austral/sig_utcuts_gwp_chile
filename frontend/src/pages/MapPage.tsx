@@ -579,6 +579,10 @@ export default function MapPage() {
 
     // If source exists, toggle all layers
     if (map.current.getSource(key)) {
+      if (checked) {
+        const existingSrc: any = map.current.getSource(key)
+        console.log(`[Capa "${layerInfo.label}" (${key})] GeoJSON desplegado:`, existingSrc?._data)
+      }
       if (layerInfo.type === 'wms') {
         map.current.setLayoutProperty(`${key}-raster`, 'visibility', vis)
       } else if (key === 'provincias') {
@@ -617,6 +621,7 @@ export default function MapPage() {
         const fetchRes = await fetch(`/insumos/datos_geo/${layerInfo.file}`)
         if (!fetchRes.ok) throw new Error(`HTTP ${fetchRes.status}`)
         const geoData = await fetchRes.json()
+        console.log(`[Capa "${layerInfo.label}" (${key})] GeoJSON cargado desde /insumos/datos_geo/${layerInfo.file} — ${geoData?.features?.length ?? 0} features:`, geoData)
         if (map.current && !map.current.getSource(key)) {
           map.current.addSource(key, { type: 'geojson', data: geoData })
 
@@ -846,6 +851,7 @@ export default function MapPage() {
       setLoadingLayers(prev => ({ ...prev, [key]: true }))
       try {
         const res = await api.get(layerInfo.apiUrl)
+        console.log(`[Capa "${layerInfo.label}" (${key})] GeoJSON cargado desde API ${layerInfo.apiUrl} — ${res.data?.features?.length ?? 0} features:`, res.data)
         if (map.current && !map.current.getSource(key)) {
           map.current.addSource(key, { type: 'geojson', data: res.data })
           
