@@ -24,7 +24,7 @@ const MAP_LAYERS: MapLayer[] = [
   { key: 'viveros_inscritos_2024', label: 'Viveros SAG 2024 (CIREN - Vector)', type: 'geojson', file: 'viveros_inscritos_2024.json', color: '#a855f7' },
   { key: 'areas_recupera_suelos', label: 'Conservación de Suelos (SIRSD - Vector)', type: 'geojson', file: 'areas_aptas_recuperacion_suelos.json', color: '#fbbf24' },
   { key: 'prog_recuperacion_suelos_degra', label: 'Programas SIRSD (CIREN - Vector)', type: 'geojson-api', apiUrl: '/layers/sirsd_programas/geojson', color: '#fb923c' },
-  { key: 'plantaciones_forestales_2022', label: 'Plantaciones Forestales 2022 (INFOR - Vector)', type: 'geojson-api', apiUrl: '/layers/plantaciones_forestales_2022/geojson', color: '#059669' },
+  { key: 'plantaciones_forestales_2022', label: 'Plantaciones Forestales 2022 (INFOR - Vector)', type: 'geojson', file: 'plantaciones_forestales_2022.json', color: '#059669' },
   { key: 'interventions', label: 'Intervenciones Reales', type: 'geojson-api', apiUrl: '/interventions/geojson/all', color: '#e11d48' },
   { key: 'areas_protegidas', label: 'Áreas Protegidas', type: 'geojson', file: 'Areas_Protegidas.json', color: '#10b981' },
   { key: 'sitios_prioritarios', label: 'Sitios Prioritarios', type: 'geojson', file: 'sitios_prior_integrados.json', color: '#84cc16' },
@@ -766,6 +766,33 @@ export default function MapPage() {
                 setSelectedIntervention({
                   type: 'sirsd_programa',
                   properties: props
+                })
+              }
+            })
+            const handleMouseEnter = () => { if (map.current) map.current.getCanvas().style.cursor = 'pointer' }
+            const handleMouseLeave = () => { if (map.current) map.current.getCanvas().style.cursor = '' }
+            map.current.on('mouseenter', `${key}-fill`, handleMouseEnter)
+            map.current.on('mouseleave', `${key}-fill`, handleMouseLeave)
+          } else if (key === 'plantaciones_forestales_2022') {
+            // Render plantaciones desde archivo estático (la tabla DB suele venir vacía / sin geom_geojson)
+            map.current.addLayer({
+              id: `${key}-fill`,
+              type: 'fill',
+              source: key,
+              paint: { 'fill-color': layerInfo.color, 'fill-opacity': 0.4 }
+            })
+            map.current.addLayer({
+              id: `${key}-line`,
+              type: 'line',
+              source: key,
+              paint: { 'line-color': layerInfo.color, 'line-width': 1 }
+            })
+            map.current.on('click', `${key}-fill`, (e) => {
+              if (e.features && e.features[0]) {
+                setSelectedTerritory(null)
+                setSelectedIntervention({
+                  type: 'plantacion_forestal_2022',
+                  properties: e.features[0].properties
                 })
               }
             })
