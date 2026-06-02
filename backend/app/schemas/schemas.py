@@ -72,6 +72,8 @@ class MechanismResponse(BaseModel):
     time_horizon: Optional[str] = None
     ndc_alignment: Optional[str] = None
     target_beneficiaries: Optional[str] = None
+    enabling_conditions: Optional[str] = None
+    intervention_types: Optional[str] = None
     status: Optional[str] = None
     is_sample: Optional[bool] = False
     created_at: Optional[datetime] = None
@@ -147,10 +149,13 @@ class InterventionResponse(BaseModel):
     id: int
     project_id: int
     intervention_type: Optional[str] = None
+    ndc_component: Optional[str] = None
     hectares_estimated: Optional[float] = None
     hectares_verified: Optional[float] = None
     tco2e_estimated: Optional[float] = None
     tco2e_verified: Optional[float] = None
+    beneficiaries_estimated: Optional[int] = None
+    beneficiaries_verified: Optional[int] = None
     status: Optional[str] = None
     verification_status: Optional[str] = None
     is_sample: Optional[bool] = False

@@ -1,5 +1,6 @@
 """Seed data loader — synthetic demo data for SIG-UTCUTS Chile."""
 import json
+import os
 from datetime import datetime, date
 from sqlalchemy.orm import Session
 from app.models.user import User, Role
@@ -15,6 +16,27 @@ from app.models.layer import DataSource, Layer
 from app.models.sirsd_programa import SirsdPrograma
 from app.models.plantacion_forestal_2022 import PlantacionForestal2022
 from app.core.security import get_password_hash
+
+
+def _find_geo_file(filename: str):
+    """Resuelve un archivo de insumos/datos_geo probando rutas de dev y de producción.
+
+    En dev, base_dir es la raíz del repo (insumos/datos_geo existe ahí).
+    En producción (Docker) el backend vive en /app/backend, así que base_dir == /app
+    y los archivos quedan bajo /app/static/insumos/datos_geo (copiados del build del
+    frontend). El path original solo probaba /app/insumos/... que NO existe en el
+    contenedor -> por eso SIRSD/plantaciones quedaban vacías en producción.
+    """
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+    candidates = [
+        os.path.join(base_dir, "insumos", "datos_geo", filename),                        # dev: raíz del repo
+        os.path.join(base_dir, "static", "insumos", "datos_geo", filename),              # prod: /app/static
+        os.path.join(base_dir, "frontend", "public", "insumos", "datos_geo", filename),  # dev alterno
+    ]
+    for p in candidates:
+        if os.path.exists(p):
+            return p
+    return None
 
 
 def _bbox_to_geojson(x1, y1, x2, y2):
@@ -567,11 +589,9 @@ def seed_sirsd_programas(db: Session):
     if db.query(SirsdPrograma).first():
         return
 
-    import os
-    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-    file_path = os.path.join(base_dir, "insumos", "datos_geo", "prog_recuperacion_suelos_degra.json")
-    if not os.path.exists(file_path):
-        print(f"  [WARN] SIRSD GeoJSON seed file not found at: {file_path}")
+    file_path = _find_geo_file("prog_recuperacion_suelos_degra.json")
+    if not file_path:
+        print("  [WARN] SIRSD GeoJSON seed file no encontrado (probé insumos/, static/insumos/, frontend/public/insumos/)")
         return
 
     try:
