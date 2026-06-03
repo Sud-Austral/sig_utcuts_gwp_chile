@@ -332,6 +332,14 @@ export default function MapPage() {
         map.current.addLayer({ id: 'regions-line', type: 'line', source: 'regions',
           layout: { 'visibility': vis },
           paint: { 'line-color': '#60a5fa', 'line-width': 2 } })
+        map.current.on('click', 'regions-fill', (e) => {
+          if (e.features && e.features[0]) {
+            setSelectedTerritory(null)
+            setSelectedIntervention({ type: 'generic', label: 'Región', properties: e.features[0].properties })
+          }
+        })
+        map.current.on('mouseenter', 'regions-fill', () => { if (map.current) map.current.getCanvas().style.cursor = 'pointer' })
+        map.current.on('mouseleave', 'regions-fill', () => { if (map.current) map.current.getCanvas().style.cursor = '' })
       }
 
       // Comunas: carga desde GeoJSON real (no desde la DB que tiene bounding boxes del seed)
@@ -632,6 +640,14 @@ export default function MapPage() {
               source: key,
               paint: { 'line-color': layerInfo.color, 'line-width': 2 }
             })
+            map.current.on('click', 'provincias-line', (e) => {
+              if (e.features && e.features[0]) {
+                setSelectedTerritory(null)
+                setSelectedIntervention({ type: 'generic', label: 'Provincia', properties: e.features[0].properties })
+              }
+            })
+            map.current.on('mouseenter', 'provincias-line', () => { if (map.current) map.current.getCanvas().style.cursor = 'pointer' })
+            map.current.on('mouseleave', 'provincias-line', () => { if (map.current) map.current.getCanvas().style.cursor = '' })
           } else if (key === 'viveros_forestales') {
             map.current.addLayer({
               id: `${key}-circle`,
@@ -862,6 +878,14 @@ export default function MapPage() {
                 'line-width': 1.5
               }
             })
+            map.current.on('click', `${key}-fill`, (e) => {
+              if (e.features && e.features[0]) {
+                setSelectedTerritory(null)
+                setSelectedIntervention({ type: 'generic', label: layerInfo.label, properties: e.features[0].properties })
+              }
+            })
+            map.current.on('mouseenter', `${key}-fill`, () => { if (map.current) map.current.getCanvas().style.cursor = 'pointer' })
+            map.current.on('mouseleave', `${key}-fill`, () => { if (map.current) map.current.getCanvas().style.cursor = '' })
           }
           reorderMapLayers(layersList)
           applyRegionFilter(selectedRegion)
@@ -1194,6 +1218,25 @@ export default function MapPage() {
             <button onClick={() => setSelectedIntervention(null)} className="text-ocean-400 hover:text-white text-lg">×</button>
           </div>
           <div className="space-y-3">
+            {/* PANEL GENÉRICO — capas sin ficha específica (regiones, provincias, áreas protegidas, etc.) */}
+            {selectedIntervention.type === 'generic' && (
+              <div className="space-y-2 text-xs">
+                <div>
+                  <span className="text-[10px] uppercase font-bold text-ocean-400">Capa</span>
+                  <p className="text-sm text-white font-semibold mt-0.5">{selectedIntervention.label || 'Detalle'}</p>
+                </div>
+                <div className="space-y-1.5 pt-1.5 border-t border-ocean-800/30">
+                  {Object.entries(selectedIntervention.properties || {})
+                    .filter(([k, v]) => v !== null && v !== undefined && v !== '' && !['id', 'objectid'].includes(k))
+                    .map(([k, v]) => (
+                      <div key={k} className="flex justify-between gap-2">
+                        <span className="text-[10px] uppercase font-bold text-ocean-400 flex-shrink-0">{k}</span>
+                        <span className="text-xs text-ocean-200 text-right break-words">{String(v)}</span>
+                      </div>
+                    ))}
+                </div>
+              </div>
+            )}
             {/* VIVEROS FORESTALES */}
             {selectedIntervention.type === 'vivero_forestal' && (
               <div className="space-y-2 text-xs">
