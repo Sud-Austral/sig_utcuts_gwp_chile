@@ -345,18 +345,45 @@ export default function MapPage() {
       // Comunas: carga desde GeoJSON real (no desde la DB que tiene bounding boxes del seed)
       const communesFetch = await fetch('/insumos/datos_geo/comunas.json')
       const communesRaw = await communesFetch.json()
-      // Normalizar: agregar 'code' (cod_comuna con padding), 'name' (Comuna) y 'area_ha' (st_area_sh m² → ha)
+
+      // Priorización: priority_class vive en prioritization_scores y se une a territories.code.
+      // Normalizamos AMBOS lados a 5 dígitos porque cod_comuna (mapa) es número (ej. 2101) y
+      // territories.code es string que a veces trae el cero adelante (ej. "02101").
+      const normCode = (c: any) => String(c ?? '').replace(/\D/g, '').padStart(5, '0')
+      const priorityByCode: Record<string, { priority_class: string | null; score_total: number | null }> = {}
+      try {
+        const rankRes = await api.get('/prioritization/ranking?limit=2000')
+        if (Array.isArray(rankRes.data)) {
+          rankRes.data.forEach((r: any) => {
+            priorityByCode[normCode(r.territory_code)] = {
+              priority_class: r.priority_class ?? null,
+              score_total: r.score_total ?? null,
+            }
+          })
+        }
+        console.log(`[Comunas] priorización cargada: ${Object.keys(priorityByCode).length} comunas con priority_class`)
+      } catch (e) {
+        console.warn('[Comunas] no se pudo cargar /prioritization/ranking para colorear:', e)
+      }
+
+      // Normalizar: 'code', 'name', 'area_ha' + unir priority_class / priority_score por código normalizado
       const communesData = {
         ...communesRaw,
-        features: communesRaw.features.map((f: any) => ({
-          ...f,
-          properties: {
-            ...f.properties,
-            code: String(f.properties.cod_comuna).padStart(5, '0'),
-            name: f.properties.Comuna,
-            area_ha: Math.round((f.properties.st_area_sh || 0) / 10000),
+        features: communesRaw.features.map((f: any) => {
+          const code = normCode(f.properties.cod_comuna)
+          const prio = priorityByCode[code]
+          return {
+            ...f,
+            properties: {
+              ...f.properties,
+              code,
+              name: f.properties.Comuna,
+              area_ha: Math.round((f.properties.st_area_sh || 0) / 10000),
+              priority_class: prio ? prio.priority_class : null,
+              priority_score: prio ? prio.score_total : null,
+            }
           }
-        }))
+        })
       }
       if (map.current && communesData.features?.length > 0) {
         const vis = layerToggles['communes'] ? 'visible' : 'none'
@@ -1203,7 +1230,7 @@ export default function MapPage() {
             <div><span className="text-xs text-ocean-400">Puntaje de Prioridad</span><p className="text-lg font-bold text-white">{selectedTerritory.priority_score?.toFixed(1) || '—'}</p></div>
             <div>
               <span className={`inline-block px-2 py-0.5 rounded-full text-xs font-medium badge-${selectedTerritory.priority_class}`}>
-                {selectedTerritory.priority_class === 'muy_alta' ? 'Muy Alta' : selectedTerritory.priority_class === 'alta' ? 'Alta' : selectedTerritory.priority_class === 'media' ? 'Media' : selectedTerritory.priority_class === 'baja' ? 'Baja' : 'Muy Baja'}
+                {selectedTerritory.priority_class === 'muy_alta' ? 'Muy Alta' : selectedTerritory.priority_class === 'alta' ? 'Alta' : selectedTerritory.priority_class === 'media' ? 'Media' : selectedTerritory.priority_class === 'baja' ? 'Baja' : selectedTerritory.priority_class === 'muy_baja' ? 'Muy Baja' : 'Sin priorización'}
               </span>
             </div>
           </div>
